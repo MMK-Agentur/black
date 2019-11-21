@@ -7,6 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
+    "bootstrap-scss": "4.3.1",
     "gridsome": "^0.7.0"
   }
 }
