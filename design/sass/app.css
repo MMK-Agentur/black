@@ -1,0 +1,21 @@
+#page-head {
+  width: 100%;
+  font-family: MAN-light,Arial,sans-serif;
+  font-size: 15px;
+  line-height: 1.428571429;
+  color: #303c49;
+  background: white;
+  border-bottom: transparent;
+}
+
+#page-head .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  min-height: 60px;
+}
+/*# sourceMappingURL=app.css.map */
