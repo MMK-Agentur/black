@@ -6,5 +6,14 @@
 
 module.exports = {
   siteName: 'Black ',
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Users',        
+        path: 'data/**/*.csv'       
+      }
+    }
+  ]
+  
 }
