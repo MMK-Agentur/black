@@ -10,7 +10,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Users',        
+        typeName: 'Vehicle',        
         path: 'data/**/*.csv'       
       }
     }
