@@ -5,7 +5,7 @@
       <div class="card-body">
         <h3 class="card-title">{{vehicle.Model}}</h3>
         <div class="card-text-promo">
-          <div class="price-text">{{vehicle.NormalPrice}}</div>
+          <div class="price-text">{{formatPrice(vehicle.NormalPrice)}}</div>
           <small class="val-text">EUR (netto)</small>
         </div>
         <div class="card-list">
@@ -37,12 +37,9 @@
 </template>
 
 <script>
-import { BCard } from "bootstrap-vue";
 
 export default {
-  components: {
-    BCard
-  },
+ 
   props: {
     vehicle: {
       type: Object,
@@ -52,8 +49,14 @@ export default {
   computed: {
     imageSrc: function() {
       return `assets/images/${this.vehicle.Image}.jpg`;
+    }    
+  },
+  methods: {
+    formatPrice(value) {
+        let val = (value/1).toFixed(2).replace('.', ',')
+        return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")
     }
-  }
+}
 };
 </script>
 
