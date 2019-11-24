@@ -1,8 +1,6 @@
 <template>
   <Layout>
-
-  <VehicleList :vehicles="$page.vehicles.edges[0].node.records">
-  </VehicleList>
+    <VehicleList :vehicles="vehicles"></VehicleList>
   </Layout>
 </template>
 
@@ -21,6 +19,7 @@ query Vehicles {
           EnginePower          
           Location
           Region
+          Image
         }
       }
     }
@@ -30,17 +29,21 @@ query Vehicles {
 </page-query>
 
 <script>
-
-import VehicleList from '../components/VehicleList';
+import VehicleList from "../components/VehicleList";
 
 export default {
-  components:{
+  components: {
     VehicleList
   },
   metaInfo: {
-    title: 'Vehicles'
+    title: "Vehicles"
+  },
+  computed: {
+    vehicles: function() {
+      return this.$page.vehicles.edges[0].node.records;
+    }
   }
-}
+};
 </script>
 
 <style>
