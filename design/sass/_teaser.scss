@@ -1,0 +1,52 @@
+.teaser-section {
+    font-family: MAN-light, Arial, sans-serif;
+    display: flex;
+    flex-direction: row;
+
+    .card {
+        border: 1px solid #D6D8DB;
+        margin-top: 20px;
+
+        .card-body {
+            .card-text-promo {
+                display: -webkit-inline-box;
+            }
+
+            .price-text {
+                color: black;
+                text-decoration: line-through;
+                margin-right: 10px;
+            }
+
+            .val-text {
+                color: grey;
+                text-decoration: line-through;
+            }
+
+            .card-list {
+                margin-bottom: 5px;
+                margin-top: 10px;
+
+                .card-list_item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: start;
+                    margin-top: 5px;
+                    .icon {
+                        width: 24px;
+                        margin-right: 5px;
+    
+                        img {
+                            width: 24px;
+                        }
+                    }
+    
+                    .text-list {
+                        font-family: MAN-light, Arial, sans-serif;
+                        color: #303c49;
+                    }
+                }
+            }
+        }
+    }
+}
