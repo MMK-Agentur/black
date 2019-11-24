@@ -4,10 +4,10 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import BootstrapVue from 'bootstrap-vue';
 
-import 'bootstrap/dist/css/bootstrap.css';
+require ('bootstrap/dist/css/bootstrap.css');
 import 'bootstrap-vue/dist/bootstrap-vue.css';
-import '../static/assets/css/core.css';
-import '../static/assets/css/core-extended.css';
+require ('../static/assets/css/core.css');
+require ('../static/assets/css/core-extended.css');
 
 
 
