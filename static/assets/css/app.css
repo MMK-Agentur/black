@@ -10,10 +10,33 @@
   padding-left: 40px;
   padding-right: 40px;
   background-color: #fff;
+  width: 100%;
 }
 
-@media screen and (max-width: 1011px) {
+@media screen and (max-width: 576px) {
   .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 1300px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -92,7 +115,7 @@
 
 @media screen and (max-width: 992px) {
   .container .navbar-main .nav-first-level #logo img {
-    margin-right: -321px;
+    margin-right: -146px;
   }
 }
 
@@ -159,4 +182,11 @@
   font-family: MAN-light, Arial, sans-serif;
   color: #303c49;
 }
-/*# sourceMappingURL=app.css.map */
+
+.header-content {
+  width: 100%;
+  max-width: 1300px;
+  height: calc(100vh - 60px);
+  background: url("../images/bg_header.jpg") no-repeat center center fixed;
+  background-size: cover;
+}

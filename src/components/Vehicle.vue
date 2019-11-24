@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+  <div class="col-lg-3 col-md-6 col-sm-6 col-12">
     <div class="card">
       <g-image :src="imageSrc" class="card-img-top" alt="..." />
       <div class="card-body">
