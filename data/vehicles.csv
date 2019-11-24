@@ -1,5 +1,5 @@
-Id,Model,DiscountPrice,NormalPrice,VehicleType,EnginePower,Date of registration,Mileage,Location,Region,Image
+Id,Model,DiscountPrice,NormalPrice,VehicleType,EnginePower,RegistrationDate,Mileage,Location,Region,Image
 1," MAN TGX 18.420 4X2 BLS",81300,67750,Standard SZM,309 kW (420 PS),18-Apr,148814 km,Chemnitz,East,MAN TGX 18.420 4X2 BLS
-2," MAN TGX 19.420 4X2 BLS",81300,67750,Standard SZM,309 kW (420 PS),18-Apr,138814 km,Tegucigalpa,East,MAN TGX 18.420 4X2 BLS(2)
+2," MAN TGX 19.420 4X2 BLS",81300,67750,Baustofffahrzeug,309 kW (420 PS),18-Apr,138814 km,Tegucigalpa,East,MAN TGX 18.420 4X2 BLS(2)
 3," MAN TGX 19.420 4X2 BLS",81300,67750,Standard SZM,309 kW (420 PS),18-Apr,138814 km,Tegucigalpa,East,MAN TGX 18.420 4X2 BLS(2)
 4," MAN TGX 19.420 4X2 BLS",81300,67750,Standard SZM,309 kW (420 PS),18-Apr,138814 km,Tegucigalpa,East,MAN TGX 18.420 4X2 BLS(2)

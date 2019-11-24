@@ -19,6 +19,7 @@ query Vehicles {
           EnginePower          
           Location
           Region
+          RegistrationDate
           Image
         }
       }
