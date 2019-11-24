@@ -1,0 +1,33 @@
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: .25rem;
+
+    .page-item {
+        padding: 10px 10px;
+
+        .page-link {
+            color: #303c49;
+            cursor: auto;
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+            margin-left: -1px;
+            line-height: 1.25;
+            background-color: #fff;
+            border: 1px solid #dee2e6;
+            border-radius: 4px;
+
+            a {
+                text-decoration: none;
+            }
+            .active {
+                z-index: 1;
+                background-color: #303c49;
+                color: #D6D8DB;
+            }
+        }
+    }
+}
