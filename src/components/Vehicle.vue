@@ -25,7 +25,7 @@ BCard
  },
  computed: {
      imageSrc: function() {
-         return `assets/${this.vehicle.Image}.jpg`;
+         return `assets/images/${this.vehicle.Image}.jpg`;
      }
  }
 }
