@@ -1,9 +1,9 @@
 <template>
   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-    <!-- <b-card>
+    <!-- <b-card class="card-img-top">
       <g-image :src="imageSrc" class="card-img-top" alt="..." />
       <b-card-body>
-        <h3 class="card-title">{{vehicle.Model}}</h3>
+        <h3 class="card-title">{{vehicle.Model}}</h3> 
 
         <div class="card-text-promo">
           <div class="price-text">{{formatPrice(vehicle.NormalPrice)}}</div>
@@ -67,7 +67,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> 
 </template>
 
 <script>
