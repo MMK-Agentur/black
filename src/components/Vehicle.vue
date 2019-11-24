@@ -2,6 +2,7 @@
   <div>
    <b-card
    :title="vehicle.Model"
+ 
    >
    <g-image :src="imageSrc"/>
    </b-card>
