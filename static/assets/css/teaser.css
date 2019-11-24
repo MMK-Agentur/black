@@ -1,0 +1,10 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: yellow;
+}
+
+.container .teaser-item {
+  border: 1px solid grey;
+}
+/*# sourceMappingURL=teaser.css.map */

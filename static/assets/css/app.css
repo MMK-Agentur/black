@@ -1,0 +1,193 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  min-height: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #fff;
+  width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .container {
+    max-width: 1300px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container .navbar-main {
+  width: 100%;
+  position: relative;
+  padding: .5rem 1rem;
+  font-family: MAN-light, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.428571429;
+  color: #303c49;
+  background-color: #fff;
+}
+
+.container .navbar-main a {
+  font-family: MAN-bold, Arial, sans-serif;
+  line-height: 1.1em;
+  display: inline;
+  font-size: 13px;
+  margin-right: 20px;
+  padding-bottom: 6px;
+  margin-left: 0;
+  padding: 0px;
+  text-transform: uppercase;
+}
+
+.container .navbar-main .nav-title {
+  padding: 14px 0 12px;
+  vertical-align: bottom;
+  color: #acb1b6;
+  font-size: 13px;
+  margin-bottom: 0;
+  font-family: MAN-light, Arial, sans-serif;
+}
+
+.container .navbar-main .nav-first-level {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .navbar-main .nav-first-level #logo {
+  text-align: center;
+  display: table-cell;
+  width: 145px;
+  position: absolute;
+  top: 4px;
+  vertical-align: bottom;
+  height: auto;
+  z-index: 20;
+  right: 40px;
+  -webkit-transition: ease all .2s;
+  transition: ease all .2s;
+}
+
+@media screen and (max-width: 992px) {
+  .container .navbar-main .nav-first-level #logo {
+    width: 94px;
+  }
+}
+
+.container .navbar-main .nav-first-level #logo img {
+  display: inline-block;
+  max-width: 145px;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .container .navbar-main .nav-first-level #logo img {
+    margin-right: -146px;
+  }
+}
+
+.teaser-section {
+  font-family: MAN-light, Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.teaser-section .card {
+  border: 1px solid #D6D8DB;
+  margin-top: 20px;
+}
+
+.teaser-section .card .card-body .card-text-promo {
+  display: -webkit-inline-box;
+}
+
+.teaser-section .card .card-body .price-text {
+  color: black;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.teaser-section .card .card-body .val-text {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.teaser-section .card .card-body .card-list {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.teaser-section .card .card-body .card-list .card-list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 5px;
+}
+
+.teaser-section .card .card-body .card-list .card-list_item .icon {
+  width: 24px;
+  margin-right: 5px;
+}
+
+.teaser-section .card .card-body .card-list .card-list_item .icon img {
+  width: 24px;
+}
+
+.teaser-section .card .card-body .card-list .card-list_item .text-list {
+  font-family: MAN-light, Arial, sans-serif;
+  color: #303c49;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1300px;
+  height: calc(100vh - 60px);
+  background: url("../images/bg_header.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+/*# sourceMappingURL=app.css.map */
