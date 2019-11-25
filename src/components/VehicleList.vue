@@ -5,8 +5,13 @@
       <div v-if="vehicles.length">
         <Vehicle v-for="vehicle in listedVehicles" :key="vehicle.id" :vehicle="vehicle" />
       </div>
-      <b-pagination v-model="currentPage" :total-rows="totalRows" :per-page="perPage"></b-pagination>
-    
+       <div class="col-12">
+            <b-pagination class="pagination justify-content-center text-center"
+            hide-goto-end-buttons
+            hide-ellipsis 
+            align="center"
+             v-model="currentPage" :total-rows="totalRows" :per-page="perPage"></b-pagination>               
+       </div> 
     </div>
   </div>
 </template>

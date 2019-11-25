@@ -8,8 +8,9 @@ require ('bootstrap/dist/css/bootstrap.css');
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 require ('../static/assets/css/core.css');
 require ('../static/assets/css/core-extended.css');
-require('../static/assets/css/app.css');
 
+require('../static/assets/css/pagination.css');
+require('../static/assets/css/app.css');
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout);
