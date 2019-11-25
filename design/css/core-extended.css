@@ -3277,25 +3277,24 @@ a.bg-black:focus {
 
 @font-face {
     font-family: "MAN-reg";
-  src: url("fonts/maneuropecondensed-regular.eot");
-  src: url("fonts/maneuropecondensed-regular.eot?#iefix") format("embedded-opentype"), url("fonts/maneuropecondensed-regular.woff2") format("woff2"), url("fonts/maneuropecondensed-regular.woff") format("woff"), url("fonts/maneuropecondensed-regular.ttf") format("truetype"), url("fonts/maneuropecondensed-regular.svg#svgFontName") format("svg");
+  
+  src:  url("../font/maneuropecondensed-regular.woff2") format("woff2"), url("../font/maneuropecondensed-regular.woff") format("woff"), url("../font/maneuropecondensed-regular.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
     font-family: "MAN-light";
-  src: url("fonts/maneurope-light.eot");
-  src: url("fonts/maneurope-light.eot?#iefix") format("embedded-opentype"), url("fonts/maneurope-light.woff2") format("woff2"), url("fonts/maneurope-light.woff") format("woff"), url("fonts/maneurope-light.ttf") format("truetype"), url("fonts/maneurope-light.svg#svgFontName") format("svg");
+  
+  src: url("../fonts/maneurope-light.woff2") format("woff2"), url("../fonts/maneurope-light.woff") format("woff"), url("../fonts/maneurope-light.ttf") format("truetype");
   font-weight: normal;
 }
 
 @font-face {
     font-family: "MAN-bold";
-  src: url("fonts/maneuropecondensed-bold.eot");
-  src: url("fonts/maneuropecondensed-bold.eot?#iefix") format("embedded-opentype"), url("fonts/maneuropecondensed-bold.woff2") format("woff2"), url("fonts/maneuropecondensed-bold.woff") format("woff"), url("fonts/maneuropecondensed-bold.ttf") format("truetype"), url("fonts/maneuropecondensed-bold.svg#svgFontName") format("svg");
+  
+  src:  url("../fonts/maneuropecondensed-bold.woff2") format("woff2"), url("../fonts/maneuropecondensed-bold.woff") format("woff"), url("../fonts/maneuropecondensed-bold.ttf") format("truetype");
   font-weight: bold;
 }
-
 .icon-calendar:before, .icon-prev:before, .icon-next:before, .icon-play:before, .icon-image:before, .icon-thumb:before, .icon-eye:before, .icon-pin:before, .icon-search:before, .icon-baloon-bottom:before, .icon-baloon-top:before, .icon-arrow-down:before, .icon-arrow-right:before, .icon-arrow_lefttoright:before, .icon-arrow_uptodown:before, .icon-info:before, .icon-video:before, .link[class^="icon-"]:before, .link[class*=" icon-"]:before, .link[class^="icon-social"] span:before, .link[class^="icon-social"] span:after, .link[class^="icon-social"]:before, .link[class^="icon-social"]:after, .link[class*=" icon-social"] span:before, .link[class*=" icon-social"] span:after, .link[class*=" icon-social"]:before, .link[class*=" icon-social"]:after, .zoom:after, .editorial-content ul:not(.slick-dots).check-list > li:before, .service-links #main-search .search-toggle:after, .service-links #language-select:before, .service-links #routing-header .icon-globe:after, #main-navigation .nav-first-level > a:after, #main-navigation .sub-menu-container a[aria-haspopup="true"]:after, #main-navigation .router-links a.has-arrow:after, #main-navigation #nav-mobile-header .nav-breadcrumb a:before, .content-navigation .icon-back:before {
     font-family: 'icon';
     speak: none;
