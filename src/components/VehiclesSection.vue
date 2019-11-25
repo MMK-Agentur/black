@@ -2,6 +2,7 @@
   <div>
     <Region @regionSelected="filterByRegion" />
     <Location @locationSelected="filterByLocation"/>
+    <Price @priceSelected="filterByPrice"/>
     <VehicleList :vehicles="vehiclesListed"></VehicleList>
   </div>
 </template>
@@ -10,11 +11,14 @@
 import VehicleList from "../components/VehicleList";
 import Region from "../components/Region";
 import Location from "../components/Location";
+import Price from "../components/Price";
+
 export default {
   components: {
     VehicleList,
     Region, 
-    Location
+    Location, 
+    Price
   },
 
   props: {
@@ -46,8 +50,12 @@ export default {
       } else {
         this.vehiclesListed = this.vehicles;
       }
+    },
+     filterByPrice(price) {
+      console.log(price);
+      }
     }
-  }
+  
 };
 </script>
 
