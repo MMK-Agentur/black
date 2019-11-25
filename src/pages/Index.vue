@@ -1,13 +1,12 @@
 <template>
   <Layout>
-    <Region/>
-    <VehicleList :vehicles="vehicles"></VehicleList>
+   <VehiclesSection :vehicles="vehicles"/>
   </Layout>
 </template>
 
 <page-query>
 query Vehicles {
- vehicles: allVehicle {
+ vehicles: allVehicle { 
     edges {
       node {
         records {
@@ -31,12 +30,11 @@ query Vehicles {
 </page-query>
 
 <script>
-import VehicleList from "../components/VehicleList";
-import Region from "../components/Region";
 
+import VehiclesSection from '../components/VehiclesSection';
 export default {
   components: {
-    VehicleList, Region
+    VehiclesSection
   },
   metaInfo: {
     title: "Vehicles"

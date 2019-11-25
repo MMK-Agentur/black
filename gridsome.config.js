@@ -20,6 +20,13 @@ module.exports = {
         typeName: 'Region',        
         path: 'data/Regions.csv'       
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Location',        
+        path: 'data/Locations.csv'       
+      }
     }
   ]
   

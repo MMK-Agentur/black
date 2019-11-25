@@ -1,8 +1,8 @@
 <template>
   <div>
-    <b-form-select v-model="selectedRegion" :options="regions" @change="regionSelected">
+    <b-form-select v-model="selectedLocation" :options="locations" @change="locationSelected">
       <template v-slot:first>
-        <option :value="null" >-- Please select a region --</option>
+        <option :value="null" >-- Please select a location --</option>
       </template>
     </b-form-select>
   </div>
@@ -10,11 +10,11 @@
 
 <static-query>
 query {
-  regions: allRegion {
+  locations: allLocation {
     edges {
       node {
         records {
-          Region
+          Location
         }
       }
     }
@@ -28,18 +28,18 @@ import BFormSelect from "bootstrap-vue";
 export default {
   data: function () {
     return {
-        selectedRegion: null
+        selectedLocation: null
         }
   },
 
   computed: {
-    regions: function() {
-      return this.$static.regions.edges[0].node.records.map(x => x.Region);
+    locations: function() {
+      return this.$static.locations.edges[0].node.records.map(x => x.Location);
     }
   },
   methods:{
-     regionSelected(region){
-         this.$emit("regionSelected", region);
+     locationSelected(location){
+         this.$emit("locationSelected", location);
      }   
     }
 };
