@@ -50,8 +50,8 @@
   width: 100%;
   position: relative;
   padding: .5rem 1rem;
-  font-family: MAN-light, Arial, sans-serif;
-  font-size: 15px;
+  font-family: MAN-bold,Arial,sans-serif;
+  font-size: 13px;
   line-height: 1.428571429;
   color: #303c49;
   background-color: #fff;
@@ -62,6 +62,7 @@
   line-height: 1.1em;
   display: inline;
   font-size: 13px;
+  font-weight: 800;
   margin-right: 20px;
   padding-bottom: 6px;
   margin-left: 0;
@@ -277,5 +278,11 @@ footer {
 footer .footer-container {
   padding-right: 40px;
   padding-left: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer-container .list-item {
+  font-size: 15px;
 }
 /*# sourceMappingURL=app.css.map */
