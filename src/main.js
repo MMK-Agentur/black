@@ -11,6 +11,7 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
+import VueWindowSize from 'vue-window-size';
 require ('../static/assets/css/core.css');
 require ('../static/assets/css/core-extended.css');
 
@@ -25,6 +26,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.component('font-awesome', FontAwesomeIcon);
   Vue.component('font-awesome-icon', FontAwesomeIcon);
+  Vue.use(VueWindowSize);
   Vue.use(BootstrapVue);
 
 }

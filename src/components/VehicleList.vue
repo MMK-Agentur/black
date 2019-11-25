@@ -13,13 +13,13 @@
           v-model="currentPage"
           :total-rows="totalRows"
           :per-page="perPage"
-          limit=3
+          limit="3"
         >
           <template style="color: #E40045;" v-slot:prev-text>
-               <font-awesome :icon="['fas', 'chevron-left']" style="color: #E40045;"/>
+            <font-awesome :icon="['fas', 'chevron-left']" style="color: #E40045;" />
           </template>
           <template v-slot:next-text>
-           <font-awesome :icon="['fas', 'chevron-right']" style="color: #E40045;"/>
+            <font-awesome :icon="['fas', 'chevron-right']" style="color: #E40045;" />
           </template>
 
           <template v-slot:page="{ page, active }">
@@ -28,6 +28,7 @@
         </b-pagination>
       </div>
     </div>
+    <div></div>
   </div>
 </template>
 
@@ -38,7 +39,6 @@ import BPagination from "bootstrap-vue";
 export default {
   data() {
     return {
-      perPage: 8,
       currentPage: 1
     };
   },
@@ -60,6 +60,13 @@ export default {
     },
     totalRows() {
       return this.vehicles.length;
+    },
+    perPage() {
+      
+      if (this.windowWidth < 768) return 1;
+      if (this.windowWidth >= 768 && this.windowWidth < 922 ) return 2;
+      
+      return 8;
     }
   }
 };
