@@ -2,7 +2,7 @@
   <div>
     <b-form-select v-model="selectedPrice" :options="prices" @change="priceSelected">
       <template v-slot:first>
-        <option :value="null" >-- Please select a price --</option>
+        <option :value="null">-- Please select a price --</option>
       </template>
     </b-form-select>
   </div>
@@ -28,22 +28,30 @@ query {
 import BFormSelect from "bootstrap-vue";
 
 export default {
-  data: function () {
+  data: function() {
     return {
-        selectedPrice: null
-        }
+      selectedPrice: null
+    };
   },
 
   computed: {
     prices: function() {
-      return this.$static.prices.edges[0].node.records.map(x => x.PriceLegend);
+      return this.$static.prices.edges[0].node.records.map(function(x) {
+        return {
+          text: x.PriceLegend,
+          value: {
+            To: x.To,
+            From: x.From
+          }
+        };
+      });
     }
   },
-  methods:{
-     priceSelected(price){
-         this.$emit("priceSelected", price);
-     }   
+  methods: {
+    priceSelected(price) {
+      this.$emit("priceSelected", price);
     }
+  }
 };
 </script>
 
