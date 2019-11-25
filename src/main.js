@@ -12,11 +12,14 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap-vue/dist/bootstrap-vue.css';
 import VueWindowSize from 'vue-window-size';
+import cookieconsent from 'vue-cookieconsent-component';
+
 require ('../static/assets/css/core.css');
 require ('../static/assets/css/core-extended.css');
 
 require('../static/assets/css/pagination.css');
 require('../static/assets/css/app.css');
+require('../static/assets/css/cookie.css');
 
 config.autoAddCss = false;
 library.add(fas);
@@ -26,6 +29,7 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout);
   Vue.component('font-awesome', FontAwesomeIcon);
   Vue.component('font-awesome-icon', FontAwesomeIcon);
+  Vue.component('cookie-consent', cookieconsent)
   Vue.use(VueWindowSize);
   Vue.use(BootstrapVue);
 

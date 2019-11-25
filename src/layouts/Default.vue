@@ -1,6 +1,7 @@
 <template>
   <div class="layout">
     <header class="header">
+      <cookie-consent/>
       <strong>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
