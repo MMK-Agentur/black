@@ -5,13 +5,20 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Black ',
+  siteName: 'Black Friday',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Vehicle',        
-        path: 'data/**/*.csv'       
+        path: 'data/vehicles.csv'       
+      }
+    }, 
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Region',        
+        path: 'data/Regions.csv'       
       }
     }
   ]

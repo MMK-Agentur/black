@@ -1,5 +1,6 @@
 <template>
   <Layout>
+    <Region/>
     <VehicleList :vehicles="vehicles"></VehicleList>
   </Layout>
 </template>
@@ -31,10 +32,11 @@ query Vehicles {
 
 <script>
 import VehicleList from "../components/VehicleList";
+import Region from "../components/Region";
 
 export default {
   components: {
-    VehicleList
+    VehicleList, Region
   },
   metaInfo: {
     title: "Vehicles"
