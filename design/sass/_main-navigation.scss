@@ -1,5 +1,5 @@
 .container {
-    display: flex;
+    
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -89,7 +89,7 @@
                     max-width: 145px;
                     width: 100%;
                     @media screen and(max-width: 992px){
-                        margin-right: -146px;
+                        margin-right: -201px;
                     }
                 }
             }

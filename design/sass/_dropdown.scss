@@ -1,0 +1,21 @@
+.filter {
+    margin-top: 30px;
+    font-family: MAN-light, Arial, sans-serif;
+    .filter-title {
+        font-family: MAN-Bold, Arial, sans-serif;
+        color: #303c49;
+        font-weight: 800;
+    }
+    .filter-group {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .form-group {
+            label {
+                font-family: MAN-light, Arial, sans-serif;
+            }
+        }
+    }
+}
