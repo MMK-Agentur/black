@@ -1,8 +1,8 @@
 <template>
   <div>
     <Region @regionSelected="filterByRegion" />
-    <Location @locationSelected="filterByLocation"/>
-    <Price @priceSelected="filterByPrice"/>
+    <Location @locationSelected="filterByLocation" />
+    <Price @priceSelected="filterByPrice" />
     <VehicleList :vehicles="vehiclesListed"></VehicleList>
   </div>
 </template>
@@ -12,12 +12,13 @@ import VehicleList from "../components/VehicleList";
 import Region from "../components/Region";
 import Location from "../components/Location";
 import Price from "../components/Price";
+import {filter} from "lodash";
 
 export default {
   components: {
     VehicleList,
-    Region, 
-    Location, 
+    Region,
+    Location,
     Price
   },
 
@@ -29,33 +30,40 @@ export default {
   },
   data: function() {
     return {
-      vehiclesListed: []
+      vehiclesListed: [],
+      filters: {}
     };
   },
   mounted: function() {
     this.vehiclesListed = this.vehicles;
   },
   methods: {
+    
     filterByRegion(region) {
       if (region) {
-        this.vehiclesListed = this.vehicles.filter(x => x.Region == region);
+        this.filters = {...this.filters,Region: region};
+        
       } else {
-        this.vehiclesListed = this.vehicles;
+          const {Region, ...newFilters} = this.filters;
+        this.filters = newFilters;
       }
+      this.vehiclesListed = filter(this.vehicles, this.filters);
     },
 
     filterByLocation(location) {
-      if (location) {
-        this.vehiclesListed = this.vehicles.filter(x => x.Location == location);
+     if (location) {
+        this.filters = {...this.filters,Location: location};
+        
       } else {
-        this.vehiclesListed = this.vehicles;
+          const {Location, ...newFilters} = this.filters;
+        this.filters = newFilters;
       }
+      this.vehiclesListed = filter(this.vehicles, this.filters);
     },
-     filterByPrice(price) {
+    filterByPrice(price) {
       console.log(price);
-      }
     }
-  
+  }
 };
 </script>
 
