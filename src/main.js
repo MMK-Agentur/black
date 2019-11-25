@@ -7,7 +7,6 @@ import BootstrapVue from 'bootstrap-vue';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import { config, library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -19,7 +18,7 @@ require('../static/assets/css/pagination.css');
 require('../static/assets/css/app.css');
 
 config.autoAddCss = false;
-library.add(faGithub, faTwitter, fas);
+library.add(fas);
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
