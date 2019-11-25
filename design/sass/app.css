@@ -1,7 +1,4 @@
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -122,7 +119,7 @@
 
 @media screen and (max-width: 992px) {
   .container .navbar-main .nav-first-level #logo img {
-    margin-right: -146px;
+    margin-right: -201px;
   }
 }
 
@@ -139,7 +136,6 @@
 
 .teaser-section .card {
   border: 1px solid #D6D8DB;
-  margin-top: 20px;
 }
 
 .teaser-section .card .card-body .card-text-promo {
@@ -235,5 +231,36 @@
   z-index: 1;
   background-color: #303c49;
   color: #D6D8DB;
+}
+
+.filter {
+  margin-top: 30px;
+  font-family: MAN-light, Arial, sans-serif;
+}
+
+.filter .filter-title {
+  font-family: MAN-Bold, Arial, sans-serif;
+  color: #303c49;
+  font-weight: 800;
+}
+
+.filter .filter-group {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.filter .filter-group .form-group label {
+  font-family: MAN-light, Arial, sans-serif;
 }
 /*# sourceMappingURL=app.css.map */
