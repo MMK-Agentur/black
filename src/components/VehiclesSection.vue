@@ -9,7 +9,7 @@
         </div>
         <div class="filter-group">
           <Region @regionSelected="filterByRegion" />
-          <Location @locationSelected="filterByLocation"/>
+          <VehicleType @locationSelected="filterByVehicleType"/>
           <Price @priceSelected="filterByPrice" />
         </div>
       </div>
@@ -23,7 +23,7 @@
 <script>
 import VehicleList from "../components/VehicleList";
 import Region from "../components/Region";
-import Location from "../components/Location";
+import VehicleType from "../components/VehicleType";
 import Price from "../components/Price";
 import { filter } from "lodash";
 
@@ -31,7 +31,7 @@ export default {
   components: {
     VehicleList,
     Region,
-    Location,
+    VehicleType,
     Price
   },
 
@@ -55,14 +55,14 @@ export default {
       const { Price, ...regionAndLocation } = this.filters;
       this.vehiclesListed = filter(this.vehicles, regionAndLocation);
       if (Price) {
-        console.log(this.vehiclesListed);
+       
         this.vehiclesListed = filter(this.vehiclesListed, function(vehicle) {
           const vehiclePrice = parseInt(vehicle.DiscountPrice);
           const to = parseInt(Price.To);
           const from = parseInt(Price.From);
           return vehiclePrice >= from && vehiclePrice <= to;
         });
-        console.log(this.vehiclesListed);
+       
       }
     },
     filterByRegion(region) {
@@ -75,11 +75,11 @@ export default {
       this.filterVehicle();
     },
 
-    filterByLocation(location) {
-      if (location) {
-        this.filters = { ...this.filters, Location: location };
+    filterByVehicleType(vehicleType) {
+      if (vehicleType) {
+        this.filters = { ...this.filters, VehicleType: vehicleType };
       } else {
-        const { Location, ...newFilters } = this.filters;
+        const { VehicleType, ...newFilters } = this.filters;
         this.filters = newFilters;
       }
       this.filterVehicle();
