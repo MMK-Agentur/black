@@ -37,7 +37,7 @@ export default {
     VehiclesSection
   },
   metaInfo: {
-    title: "Vehicles"
+    title: 'MAN TopUsed Deutschland'
   },
   computed: {
     vehicles: function() {

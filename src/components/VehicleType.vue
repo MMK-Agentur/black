@@ -13,11 +13,11 @@
 
 <static-query>
 query {
-  locations: allLocation {
+  vehicleTypes: allVehicleType {
     edges {
       node {
         records {
-          Location
+          Type
         }
       }
     }
@@ -37,7 +37,7 @@ export default {
 
   computed: {
     locations: function() {
-      return this.$static.locations.edges[0].node.records.map(x => x.Location);
+      return this.$static.vehicleTypes.edges[0].node.records.map(x => x.Type);
     }
   },
   methods: {

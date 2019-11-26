@@ -26,6 +26,12 @@ library.add(fas);
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
+  head.meta.push({
+    name: 'viewport',
+    content: 'width=device-width, initial-scale=1, shrink-to-fit=no'
+  });
+
+
   Vue.component('Layout', DefaultLayout);
   Vue.component('font-awesome', FontAwesomeIcon);
   Vue.component('font-awesome-icon', FontAwesomeIcon);
