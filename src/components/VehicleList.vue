@@ -1,34 +1,31 @@
 <template >
-<div class="container">
- <div class="teaser-section row">
-    <Vehicle v-for="vehicle in listedVehicles" :key="vehicle.id" :vehicle="vehicle" />
-
-    <div class="col-12">
-      <b-pagination
-        class="pagination justify-content-center text-center"
-        hide-goto-end-buttons
-        hide-ellipsis
-        align="center"
-        v-model="currentPage"
-        :total-rows="totalRows"
-        :per-page="perPage"
-        limit="3"
-      >
-        <template style="color: #E40045;" v-slot:prev-text>
-          <font-awesome :icon="['fas', 'chevron-left']" style="color: #E40045;" />
-        </template>
-        <template v-slot:next-text>
-          <font-awesome :icon="['fas', 'chevron-right']" style="color: #E40045;" />
-        </template>
-
-        <template v-slot:page="{ page, active }">
-          <div>{{page}}</div>
-        </template>
-      </b-pagination>
+  <div class="container">
+    <div class="teaser-section row">
+      <Vehicle v-for="vehicle in listedVehicles" :key="vehicle.id" :vehicle="vehicle" />
+      <div class="col-12">
+        <b-pagination
+          align="center"
+          v-model="currentPage"
+          :total-rows="totalRows"
+          :per-page="perPage"
+          limit="3"
+        > 
+        <template v-slot:first-text>
+            <font-awesome :icon="['fas', 'angle-double-left']"  style="color: #E40045;" ></font-awesome>
+          </template>
+          <template v-slot:prev-text>
+            <font-awesome :icon="['fas', 'chevron-left']"  style="color: #E40045;" ></font-awesome>
+          </template>
+          <template v-slot:next-text>
+            <font-awesome :icon="['fas', 'chevron-right']"  style="color: #E40045;" ></font-awesome>
+          </template> 
+             <template v-slot:last-text>
+            <font-awesome :icon="['fas', 'angle-double-right']"  style="color: #E40045;" ></font-awesome>
+          </template>        
+        </b-pagination>  
+      </div>
     </div>
   </div>
-</div>
- 
 </template>
 
 <script>
