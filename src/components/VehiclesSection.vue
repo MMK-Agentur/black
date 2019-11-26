@@ -1,8 +1,21 @@
 <template>
   <div>
-    <Region @regionSelected="filterByRegion" />
-    <Location @locationSelected="filterByLocation" />
-    <Price @priceSelected="filterByPrice" />
+    <div class="container">
+      <div class="filter">
+        <div class="filter-title">
+          <h4>
+            <strong>Filtern nach:</strong>
+          </h4>
+        </div>
+        <div class="filter-group">
+          <Region @regionSelected="filterByRegion" />
+          <Location @locationSelected="filterByLocation"/>
+          <Price @priceSelected="filterByPrice" />
+        </div>
+      </div>
+      <h4 class="mt-5 mb-3"><strong>Black Friday Top Seller aus allen Regionen:</strong></h4>
+    </div>
+
     <VehicleList :vehicles="vehiclesListed"></VehicleList>
   </div>
 </template>
@@ -38,20 +51,20 @@ export default {
     this.vehiclesListed = this.vehicles;
   },
   methods: {
-      filterVehicle(){
-          const {Price, ...regionAndLocation} = this.filters;
-          this.vehiclesListed = filter(this.vehicles, regionAndLocation);
-          if(Price){
-              console.log(this.vehiclesListed);
-              this.vehiclesListed = filter(this.vehiclesListed, function(vehicle) {
-                  const vehiclePrice = parseInt(vehicle.DiscountPrice);
-                  const to = parseInt(Price.To);
-                  const from = parseInt(Price.From);
-                 return vehiclePrice >= from && vehiclePrice <= to;
-              });
-              console.log(this.vehiclesListed);
-          }
-      },
+    filterVehicle() {
+      const { Price, ...regionAndLocation } = this.filters;
+      this.vehiclesListed = filter(this.vehicles, regionAndLocation);
+      if (Price) {
+        console.log(this.vehiclesListed);
+        this.vehiclesListed = filter(this.vehiclesListed, function(vehicle) {
+          const vehiclePrice = parseInt(vehicle.DiscountPrice);
+          const to = parseInt(Price.To);
+          const from = parseInt(Price.From);
+          return vehiclePrice >= from && vehiclePrice <= to;
+        });
+        console.log(this.vehiclesListed);
+      }
+    },
     filterByRegion(region) {
       if (region) {
         this.filters = { ...this.filters, Region: region };
@@ -69,17 +82,16 @@ export default {
         const { Location, ...newFilters } = this.filters;
         this.filters = newFilters;
       }
-     this.filterVehicle();
+      this.filterVehicle();
     },
     filterByPrice(price) {
-       if (price) {
+      if (price) {
         this.filters = { ...this.filters, Price: price };
       } else {
         const { Price, ...newFilters } = this.filters;
         this.filters = newFilters;
       }
-     this.filterVehicle();
-      
+      this.filterVehicle();
     }
   }
 };

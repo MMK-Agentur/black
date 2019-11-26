@@ -1,6 +1,7 @@
 <template>
-  <div class="container">
+
     <div class="teaser-section row">
+          
       <div v-if="vehicles.length">
         <Vehicle v-for="vehicle in listedVehicles" :key="vehicle.id" :vehicle="vehicle" />
       </div>
@@ -27,8 +28,8 @@
           </template>
         </b-pagination>
       </div>
-    </div>
-    <div></div>
+    
+   
   </div>
 </template>
 

@@ -1,8 +1,9 @@
 <template>
   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
     
-    <div class="card">
+    <div class="card h-100">
       <g-image :src="imageSrc" class="card-img-top" alt="..." />
+    
       <div class="card-body">
         <h3 class="card-title">{{vehicle.Model}}</h3>
         <div class="card-text-promo">
@@ -23,8 +24,8 @@
             <img class="icon" src="/assets/images/calendar.svg" />
             <p class="text-list">{{vehicle.RegistrationDate}}</p>
           </div>
-          <div class="card-list_item">
-            <img class="icon" src="/assets/images/calendar.svg" />
+          <div class="card-list_item">              
+            <img class="icon" src="/assets/images/man_icons_48px_anthrazit_strecken.svg" />
             <p class="text-list">{{vehicle.Mileage}}</p>
           </div>
           <div class="card-list_item">
@@ -52,7 +53,7 @@ export default {
   },
   computed: {
     imageSrc: function() {
-      return `assets/images/${this.vehicle.Image}.jpg`;
+      return `/assets/images/${this.vehicle.Image}.jpg`;
     }
   },
   methods: {
