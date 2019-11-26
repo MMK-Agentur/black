@@ -40,16 +40,14 @@ export default {
       type: Array,
       required: true
     }
-  },
+  },  
   data: function() {
     return {
-      vehiclesListed: [],
+      vehiclesListed: [...this.vehicles],
       filters: {}
     };
   },
-  mounted: function() {
-    this.vehiclesListed = this.vehicles;
-  },
+
   methods: {
     filterVehicle() {
       const { Price, ...regionAndLocation } = this.filters;

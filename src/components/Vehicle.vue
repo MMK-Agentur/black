@@ -1,7 +1,7 @@
 <template>
-  <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+  <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-5">
     
-    <div class="card h-100">
+    <div class="card h-100 ">
       <g-image :src="imageSrc" class="card-img-top" alt="..." />
     
       <div class="card-body">

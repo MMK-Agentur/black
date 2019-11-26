@@ -12,28 +12,28 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Vehicle',        
-        path: 'data/vehicles.csv'       
+        path: './static/assets/data/vehicles.csv'       
       }
     }, 
     {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Region',        
-        path: 'data/Regions.csv'       
+        path: './static/assets/data/Regions.csv'       
       }
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'VehicleType',        
-        path: 'data/VehicleType.csv'       
+        path: './static/assets/data/VehicleType.csv'       
       }
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Price',        
-        path: 'data/Prices.csv'       
+        path: './static/assets/data/Prices.csv'       
       }
     }
   ]

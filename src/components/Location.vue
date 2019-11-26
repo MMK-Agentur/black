@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-3 col-md-3 col-sm-6 col-12 mt-2">
+  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
     <div class="form-group">
       <label for="exampleFormControlSelect1">Fahrzeugtyp</label>    
       <b-form-select class="form-control" id="exampleFormControlSelect1" v-model="selectedLocation" :options="locations" @change="locationSelected">
