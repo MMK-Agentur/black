@@ -1,9 +1,7 @@
 <template>
-  <div class="col-lg-3 col-md-6 col-sm-6 col-12">
-    
-    <div class="card h-100">
-      <g-image :src="imageSrc" class="card-img-top" alt="..." />
-    
+  <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-5">    
+    <div class="card h-100 ">
+      <g-image :src="imageSrc" class="card-img-top" alt="..." />    
       <div class="card-body">
         <h3 class="card-title">{{vehicle.Model}}</h3>
         <div class="card-text-promo">
@@ -11,9 +9,8 @@
           <small class="val-text">EUR (netto)</small>
         </div>
         <div class="card-list">
-          <div class="card-list_item">
+           <div class="card-list_item">
             <img class="icon" src="/assets/images/truck.svg" />
-
             <p class="text-list">{{vehicle.VehicleType}}</p>
           </div>
           <div class="card-list_item">
@@ -30,7 +27,7 @@
           </div>
           <div class="card-list_item">
             <img class="icon" src="/assets/images/location.svg" />
-            <p class="text-list">{{vehicle.Location}}</p>
+            <p class="text-list">{{vehicle.Location}}</p> 
           </div>
         </div>
       </div>

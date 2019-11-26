@@ -7,15 +7,14 @@
             <strong>Filtern nach:</strong>
           </h4>
         </div>
-        <div class="filter-group">
+         <div class="filter-group">
           <Region @regionSelected="filterByRegion" />
           <VehicleType @locationSelected="filterByVehicleType"/>
           <Price @priceSelected="filterByPrice" />
-        </div>
+        </div> 
       </div>
       <h4 class="mt-5 mb-3"><strong>Black Friday Top Seller aus allen Regionen:</strong></h4>
     </div>
-
     <VehicleList :vehicles="vehiclesListed"></VehicleList>
   </div>
 </template>
@@ -40,16 +39,14 @@ export default {
       type: Array,
       required: true
     }
-  },
+  },  
   data: function() {
     return {
-      vehiclesListed: [],
+      vehiclesListed: [...this.vehicles],
       filters: {}
     };
   },
-  mounted: function() {
-    this.vehiclesListed = this.vehicles;
-  },
+
   methods: {
     filterVehicle() {
       const { Price, ...regionAndLocation } = this.filters;

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-   <VehiclesSection :vehicles="vehicles"/>
+    <VehiclesSection :vehicles="vehicles"/> 
   </Layout>
 </template>
 
