@@ -1,5 +1,5 @@
 .container {
-    
+
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -7,35 +7,36 @@
     min-height: 60px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: #fff;
     width: 100%;
-    @media screen and(max-width: 576px){
+
+     
+
+    @media screen and(min-width: 768px) {
         padding-left: 20px;
-        padding-right: 20px;  
+        padding-right: 20px;
     }
-    @media screen and(min-width: 768px){
+
+    @media screen and(min-width: 992px) {
         padding-left: 20px;
-        padding-right: 20px;   
+        padding-right: 20px;
     }
-    @media screen and(min-width: 992px){
-        padding-left: 20px;
-        padding-right: 20px;       
-    }
-    @media screen and(max-width: 1300px){
+
+    @media screen and(max-width: 1300px) {
         max-width: 1300px;
         padding-left: 40px;
-        padding-right: 40px;  
+        padding-right: 40px;
     }
-    @media screen and(min-width: 1300px){
+
+    @media screen and(min-width: 1300px) {
         padding-left: 40px;
-        padding-right: 40px;  
+        padding-right: 40px;
     }
-    
+
     .navbar-main {
         width: 100%;
         position: relative;
         padding: .5rem 1rem;
-        font-family: MAN-bold,Arial,sans-serif;
+        font-family: MAN-bold, Arial, sans-serif;
         font-size: 13px;
         line-height: 1.428571429;
         color: #303c49;
@@ -64,12 +65,15 @@
         }
 
         .nav-first-level {
-            margin-top: 1px;
+            margin-top: -5px;
+            padding: 5px;
             display: flex;
             justify-content: space-between;
             align-items: center;
 
             #logo {
+                margin-right: -39px;
+                margin-top: -5px;
                 text-align: center;
                 display: table-cell;
                 width: 145px;
@@ -81,15 +85,19 @@
                 right: 40px;
                 -webkit-transition: ease all .2s;
                 transition: ease all .2s;
-                @media screen and(max-width: 992px){
+
+                @media screen and(max-width: 992px) {
                     width: 94px;
+                    margin-right: 19px;
+                    margin-top: 0px;
                 }
 
                 img {
                     display: inline-block;
                     max-width: 145px;
                     width: 100%;
-                    @media screen and(max-width: 992px){
+
+                    @media screen and(max-width: 992px) {
                         margin-right: -201px;
                     }
                 }

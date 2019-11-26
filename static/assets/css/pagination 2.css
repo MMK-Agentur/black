@@ -1,0 +1,26 @@
+.navigation {
+  font-family: MAN-light, Arial, sans-serif;
+  color: #303c49;
+}
+
+.navigation .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navigation .pagination .page-item {
+  padding: 10px 10px;
+}
+
+.navigation .pagination .page-item .active {
+  background-color: #303c49;
+  color: #D6D8DB;
+}
+
+.navigation .pagination .page-link {
+  color: #E40045;
+}

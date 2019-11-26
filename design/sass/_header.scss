@@ -1,13 +1,60 @@
-
-    .header-content {
-        width: 100%;
-        max-width: 2400px;
-        height: calc(100vh - 60px);
-        background: url("../assets/bg_header.jpg") no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-
+.header-content {
+    width: 100%;
+    max-width: 2400px;
+    height: 100vh;
+    min-height: 500px;
+    background: url("../assets/MAN_BlackOutFriday_1560x700px_Final1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @media screen and(max-width: 576px) {
+        height: 287px;
+        min-height: 287px;
     }
+    @media screen and(min-width: 576px) {
+        height: 287px;
+        min-height: 287px;
+    }
+    @media screen and(min-width: 768px) {
+        height: 380px;
+        min-height: 380px;
+    }
+    @media screen and(min-width: 992px) {
+        height: 600px;
+        min-height: 600px;
+    }
+    
 
+    .container {
+        background-color: transparent;
+        .header-media {
+            text-align: center;
+            img {
+                padding: 40px;
+                width: 70%;
+                @media screen and(max-width: 576px) {
+                    padding: 20px;
+                    width: 80%;
+                    margin-top: 45px;
+                }
+                @media screen and(min-width: 768px) {
+                    padding: 20px;
+                    width: 60%;
+                    margin-top: 47px;
+                }
+                @media screen and(min-width: 992px) {
+                    padding: 20px;
+                    width: 60%;
+                    margin-top: 102px;
+                }
+                @media screen and(min-width: 1300px) {
+                    padding: 0px;
+                    width: 68%;
+                    margin-top: 106px;
+                }
+            }
+        }
+        
+    }
+}

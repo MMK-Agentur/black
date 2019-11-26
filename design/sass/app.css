@@ -6,15 +6,7 @@
   min-height: 60px;
   padding-left: 40px;
   padding-right: 40px;
-  background-color: #fff;
   width: 100%;
-}
-
-@media screen and (max-width: 576px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -50,7 +42,7 @@
   width: 100%;
   position: relative;
   padding: .5rem 1rem;
-  font-family: MAN-bold,Arial,sans-serif;
+  font-family: MAN-bold, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.428571429;
   color: #303c49;
@@ -80,7 +72,8 @@
 }
 
 .container .navbar-main .nav-first-level {
-  margin-top: 1px;
+  margin-top: -5px;
+  padding: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,6 +86,8 @@
 }
 
 .container .navbar-main .nav-first-level #logo {
+  margin-right: -39px;
+  margin-top: -5px;
   text-align: center;
   display: table-cell;
   width: 145px;
@@ -109,6 +104,8 @@
 @media screen and (max-width: 992px) {
   .container .navbar-main .nav-first-level #logo {
     width: 94px;
+    margin-right: 19px;
+    margin-top: 0px;
   }
 }
 
@@ -190,9 +187,83 @@
 .header-content {
   width: 100%;
   max-width: 2400px;
-  height: calc(100vh - 60px);
-  background: url("../assets/bg_header.jpg") no-repeat center center fixed;
+  height: 100vh;
+  min-height: 500px;
+  background: url("../assets/MAN_BlackOutFriday_1560x700px_Final1.jpg") no-repeat center center fixed;
   background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+  .header-content {
+    height: 287px;
+    min-height: 287px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .header-content {
+    height: 287px;
+    min-height: 287px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-content {
+    height: 380px;
+    min-height: 380px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-content {
+    height: 600px;
+    min-height: 600px;
+  }
+}
+
+.header-content .container {
+  background-color: transparent;
+}
+
+.header-content .container .header-media {
+  text-align: center;
+}
+
+.header-content .container .header-media img {
+  padding: 40px;
+  width: 70%;
+}
+
+@media screen and (max-width: 576px) {
+  .header-content .container .header-media img {
+    padding: 20px;
+    width: 80%;
+    margin-top: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header-content .container .header-media img {
+    padding: 20px;
+    width: 60%;
+    margin-top: 47px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header-content .container .header-media img {
+    padding: 20px;
+    width: 60%;
+    margin-top: 102px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .header-content .container .header-media img {
+    padding: 0px;
+    width: 68%;
+    margin-top: 106px;
+  }
 }
 
 .pagination {
