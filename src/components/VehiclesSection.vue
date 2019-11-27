@@ -13,7 +13,7 @@
           <Price @priceSelected="filterByPrice" />
         </div> 
       </div>
-      <h4 class="mt-5 mb-3"><strong>Black Friday Top Seller aus allen Regionen:</strong></h4>
+      <h4 class="mt-5 mb-3"><strong>Blackout Friday Top Seller aus allen Regionen:</strong></h4>
     </div>
     <VehicleList :vehicles="vehiclesListed"></VehicleList>
   </div>
