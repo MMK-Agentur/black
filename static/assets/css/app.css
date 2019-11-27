@@ -185,14 +185,90 @@
   color: #303c49;
 }
 
+.teaser-section .card .card-body .media-promo {
+  width: 100%;
+  max-width: auto;
+  height: 44px;
+  background-image: url("../images/price.svg");
+  background-position: center;
+  background-size: cover;
+  
+}
+
+.teaser-section .card .card-body .media-promo .text-r {
+  font-family: MAN-bold, Arial, sans-serif;
+  color: #fff;
+  padding: 5px;
+  margin-left: 27px;
+  margin-top: 5px;
+}
+@media screen and (min-width: 576px){
+  .teaser-section .card .card-body .media-promo .text-r { 
+    margin-left: 34px; 
+  }
+}
+
+@media screen and (min-width: 768px){
+  .teaser-section .card .card-body .media-promo .text-r { 
+    margin-left: 21px; 
+  }
+}
+
+@media screen and (min-width: 992px){
+  .teaser-section .card .card-body .media-promo .text-r { 
+    margin-left: 16px; 
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 1300px){
+  .teaser-section .card .card-body .media-promo .text-r { 
+    margin-left: 5px; 
+    font-size: 19px;
+  }
+}
+
+.teaser-section .card .card-body .media-promo .text-l {
+  font-family: MAN-bold, Arial, sans-serif;
+  color: black;
+  margin-right: 19px;
+  margin-top: 10px;
+}
+@media screen and (min-width: 576px){
+  .teaser-section .card .card-body .media-promo .text-l { 
+    margin-right: 44px; 
+  }
+}
+
+@media screen and (min-width: 768px){
+  .teaser-section .card .card-body .media-promo .text-l { 
+    margin-right: 25px; 
+  }
+}
+
+@media screen and (min-width: 992px){
+  .teaser-section .card .card-body .media-promo .text-l {
+     margin-right: 19px;
+     font-size: 19px;
+  }
+}
+@media screen and (max-width: 1300px){
+  .teaser-section .card .card-body .media-promo .text-l {
+     font-size: 19px;
+     margin-right: 20px;
+  }
+}
+
 .header-content {
   width: 100%;
-  max-width: 2400px;
-  height: 100vh;
-  min-height: 500px;
-  background: url("../images/MAN_BlackOutFriday_1560x700px_Final3.jpg") no-repeat center center;
-  background-size: cover;
-}
+    max-width: 2400px;
+    height: 100vh;
+    min-height: 500px;
+    background: url("../images/MAN_BlackOutFriday_1560x700px_Final3.jpg") no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 @media screen and (max-width: 576px) {
   .header-content {
