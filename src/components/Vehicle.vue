@@ -1,7 +1,8 @@
 <template>
   <div class="col-lg-3 col-md-6 col-sm-6 col-12 mt-5">    
     <div class="card h-100 ">
-      <g-image :src="imageSrc" class="card-img-top" alt="..." />    
+      <a :href="vehicle.Link" target="_blank"><g-image :src="imageSrc" class="card-img-top" alt="..." /></a>
+      
       <div class="card-body">
         <h3 class="card-title">{{vehicle.Model}}</h3>
         <div class="media-promo d-flex flex-row justify-content-between">
