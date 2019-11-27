@@ -1,11 +1,50 @@
 Id,Model,DiscountPrice,NormalPrice,VehicleType,EnginePower,RegistrationDate,Mileage,Location,Region,Image,Link
-1,TGS 18.440 4X4H BLS,48900,39120,Standard SZM,324 kW (440 PS),42156,363999,Kirchheim u. Teck,Region SÅd,0000896691_TGS 18.440 4X4H BLS,https://www.topused.man.eu/de/de/product-detail?16426036
-2,TGX 18.440 4X2 LLS-U AKTIONSPREIS,34799,27839,Volumen SZM,324 kW (440 PS),42064,392691,Kirchheim u. Teck,Region SÅd,0000919008_TGX 18.440 4X2 LLS-U AKTIONSPREIS,https://www.topused.man.eu/de/de/product-detail?16426037
-3,TGX 18.440 4X2 LLS-U,34599,27679,Volumen SZM,324 kW (440 PS),42064,401348,Deutschland,Deutschland,0000919010_TGX 18.440 4X2 LLS-U,https://www.topused.man.eu/de/de/product-detail?16426038
-4,TGL 8.180 4X2 BL,31900,25520,Trockenfrachtkoffer,132 kW (179 PS),42522,84693,Kirchheim u. Teck,Region SÅd,0000924021_TGL 8.180 4X2 BL,https://www.topused.man.eu/de/de/product-detail?16426039
-5,TGX 18.480 4X2 LLS,34599,27679,Standard SZM,353 kW (479 PS),42095,485975,Kirchheim u. Teck,Region SÅd,0000927083_TGX 18.480 4X2 LLS,https://www.topused.man.eu/de/de/product-detail?16426040
-6,TGX 18.480 4X2 LLS,38099,30479,Standard SZM,353 kW (479 PS),42095,380234,Kirchheim u. Teck,Region SÅd,0000935937_TGX 18.480 4X2 LLS,https://www.topused.man.eu/de/de/product-detail?16426041
-7,TGX 18.480 4X2 LLS,37499,29999,Standard SZM,353 kW (479 PS),42125,426263,Kirchheim u. Teck,Region SÅd,0000936013_TGX 18.480 4X2 LLS,https://www.topused.man.eu/de/de/product-detail?16426042
-8,TGL 12.220 4X2 BL,44900,35920,Pritsche Plane,162 kW (220 PS),42614,81059,Kirchheim u. Teck,Region SÅd,0000936037_TGL 12.220 4X2 BL,https://www.topused.man.eu/de/de/product-detail?16426043
-9,TGX 18.560 4X2 BLS,37899,30319,Standard SZM,412 kW (560 PS),42005,409619,Kirchheim u. Teck,Region SÅd,0000961541_TGX 18.560 4X2 BLS,https://www.topused.man.eu/de/de/product-detail?16426044
-10,TGX 18.440 4X2 BLS AKTIONSPREIS,33599,26879,Standard SZM,324 kW (440 PS),42005,482715,Kirchheim u. Teck,Region SÅd,0000962126_TGX 18.440 4X2 BLS AKTIONSPREIS,https://www.topused.man.eu/de/de/product-detail?16426045
+1,LION'S COACH / R07 Aktionspreis,76400,95500,Bus,324 kW (440 PS),3/1/2013,570.420 km,Berlin,Ost,0000981240_image,https://www.topused.man.eu/de/de/product-detail?15519808
+2,LION'S COACH L / R08,87600,109500,Bus,324 kW (440 PS),11/1/2015,588.933 km,Berlin,Ost,0001005416_image,https://www.topused.man.eu/de/de/product-detail?15900267
+3,TOURLINER L / N 2216 SHDL,84000,105000,Bus,324 kW (440 PS),5/1/2013,449.729 km,Berlin,Ost,0001057427_image,https://www.topused.man.eu/de/de/product-detail?16355208
+4,LION'S COACH C / R09,79200,99000,Bus,324 kW (440 PS),10/1/2013,712.597 km,Berlin,Ost,0001096747_image,https://www.topused.man.eu/de/de/product-detail?16079042
+5,LION'S COACH L / R08,159600,199500,Bus,338 kW (459 PS),5/1/2017,137.921 km,Berlin,Ost,0001108862_image,https://www.topused.man.eu/de/de/product-detail?16277668
+6,CITYLINER 2 / N 1218 HDL,103600,129500,Bus,353 kW (479 PS),6/1/2015,796.137 km,Berlin,Ost,0001136687_image,https://www.topused.man.eu/de/de/product-detail?16270029
+7,TGX 18.440 4X2 LLS-U AKTIONSPREIS,26879,33599,Lkw,324 kW (440 PS),4/1/2015,411.724 km,Chemnitz,Ost,0000994246_image,https://www.topused.man.eu/de/de/product-detail?15517880
+8,TGX 18.480 4X2 BLS,27520,34400,Lkw,353 kW (479 PS),4/1/2015,428.768 km,Chemnitz,Ost,0001005749_image,https://www.topused.man.eu/de/de/product-detail?15571446
+9,TGX 18.440 4X2 BLS,29280,36600,Lkw,324 kW (440 PS),5/1/2015,406.813 km,Chemnitz,Ost,0001013413_image,https://www.topused.man.eu/de/de/product-detail?15619873
+10,TGX 18.440 4X2 BLS,28640,35800,Lkw,324 kW (440 PS),5/1/2015,406.416 km,Chemnitz,Ost,0001015716_image,https://www.topused.man.eu/de/de/product-detail?15631511
+11,TGX 18.440 4X2 BLS AKTIONSPREIS,42960,53700,Lkw,324 kW (440 PS),1/1/2017,139.241 km,Chemnitz,Ost,0001025491_image,https://www.topused.man.eu/de/de/product-detail?15680994
+12,TGX 18.440 4X2 BLS Aktionspreis,29520,36900,Lkw,324 kW (440 PS),7/1/2015,383.666 km,Chemnitz,Ost,0001040373_image,https://www.topused.man.eu/de/de/product-detail?15772590
+13,TGX 18.440 4X2 BLS,32240,40300,Lkw,324 kW (440 PS),9/1/2015,384.554 km,Chemnitz,Ost,0001062980_image,https://www.topused.man.eu/de/de/product-detail?15860303
+15,TGX 18.460 4X4H BLS,54000,67500,Lkw,338 kW (459 PS),2/1/2017,164.493 km,Chemnitz,Ost,0001097573_image,https://www.topused.man.eu/de/de/product-detail?16034501
+16,TGX 18.440 4X2 BLS,26800,33500,Lkw,324 kW (440 PS),3/1/2015,458.217 km,Chemnitz,Ost,0001101132_image,https://www.topused.man.eu/de/de/product-detail?16050283
+17,TGX 18.480 4X2 BLS,45440,56800,Lkw,353 kW (479 PS),2/1/2017,257.952 km,Chemnitz,Ost,0001105198_image,https://www.topused.man.eu/de/de/product-detail?16076171
+18,TGX 18.440 4X2 BLS,33440,41800,Lkw,324 kW (440 PS),3/1/2016,453.383 km,Chemnitz,Ost,0001107172_image,https://www.topused.man.eu/de/de/product-detail?16086381
+19,TGX 18.440 4X2 BLS,36480,45600,Lkw,324 kW (440 PS),5/1/2016,385.843 km,Chemnitz,Ost,0001129259_image,https://www.topused.man.eu/de/de/product-detail?16225004
+20,TGX 18.440 4X2 BLS,35920,44900,Lkw,324 kW (440 PS),5/1/2016,362.517 km,Chemnitz,Ost,0001129268_image,https://www.topused.man.eu/de/de/product-detail?16225081
+21,TGX 18.440 4X2 LLS-U,34000,42500,Lkw,324 kW (440 PS),4/1/2016,377.210 km,Chemnitz,Ost,0001130334_image,https://www.topused.man.eu/de/de/product-detail?16234828
+22,TGX 18.440 4X2 BLS,36880,46100,Lkw,324 kW (440 PS),4/1/2016,308.397 km,Chemnitz,Ost,0001130338_image,https://www.topused.man.eu/de/de/product-detail?16234833
+23,TGX 18.440 4X2 BLS,36720,45900,Lkw,324 kW (440 PS),3/1/2016,286.944 km,Chemnitz,Ost,0001130359_image,https://www.topused.man.eu/de/de/product-detail?16234875
+24,TGX 18.480 4X2 LLS-U,36640,45800,Lkw,353 kW (479 PS),6/1/2016,382.742 km,Chemnitz,Ost,0001141066_image,https://www.topused.man.eu/de/de/product-detail?16290058
+25,TGX 18.500 4X4H BLS,54800,68500,Lkw,368 kW (500 PS),3/1/2017,176.239 km,Chemnitz,Ost,0001141305_image,https://www.topused.man.eu/de/de/product-detail?16291581
+26,TGX 18.440 4X2 LLS-U,45840,57300,Lkw,324 kW (440 PS),4/1/2017,238.390 km,Chemnitz,Ost,0001143395_image,https://www.topused.man.eu/de/de/product-detail?16301277
+27,TGX 18.440 4X2 BLS,38800,48500,Lkw,324 kW (440 PS),4/1/2016,198.532 km,Chemnitz,Ost,0001143795_image,https://www.topused.man.eu/de/de/product-detail?16303420
+28,TGX 18.500 4X2 LLS-U,58560,73200,Lkw,368 kW (500 PS),4/1/2018,123.739 km,Chemnitz,Ost,0001147609_image,https://www.topused.man.eu/de/de/product-detail?16336060
+29,TGX 18.500 4X2 LLS-U,58160,72700,Lkw,368 kW (500 PS),4/1/2018,140.312 km,Chemnitz,Ost,0001147610_image,https://www.topused.man.eu/de/de/product-detail?16336062
+30,TGX 18.480 4X2 BLS,41520,51900,Lkw,353 kW (479 PS),7/1/2016,253.942 km,Chemnitz,Ost,0001151149_image,https://www.topused.man.eu/de/de/product-detail?16358810
+31,TGX 18.400 4X2 BLS,31359,39199,Lkw,294 kW (399 PS),4/1/2016,332.879 km,Duisburg,West,0001030196_image,https://www.topused.man.eu/de/de/product-detail?15710719
+32,TGX 18.400 4X2 BLS,27439,34299,Lkw,294 kW (399 PS),8/1/2015,333.068 km,Frechen,West,0000911464_image,https://www.topused.man.eu/de/de/product-detail?15073812
+33,TGX 18.440 4X2 BLS,27119,33899,Lkw,324 kW (440 PS),3/1/2015,436.542 km,Frechen,West,0000923881_image,https://www.topused.man.eu/de/de/product-detail?15164247
+34,TGX 18.440 4X2 BLS,27279,34099,Lkw,324 kW (440 PS),3/1/2015,431.388 km,Frechen,West,0000923907_image,https://www.topused.man.eu/de/de/product-detail?15164273
+35,TGX 18.480 4X2 BLS,29999,37499,Lkw,353 kW (479 PS),5/1/2015,392.910 km,Frechen,West,0000938317_image,https://www.topused.man.eu/de/de/product-detail?15248622
+36,TGX 18.440 4X2 BLS-EL,34399,42999,Lkw,324 kW (440 PS),8/1/2015,328.040 km,Frechen,West,0000966968_image,https://www.topused.man.eu/de/de/product-detail?15379667
+37,TGX 18.440 4X2 BLS-EL,34399,42999,Lkw,324 kW (440 PS),8/1/2015,330.858 km,Frechen,West,0000967026_image,https://www.topused.man.eu/de/de/product-detail?15379725
+38,TGX 18.440 4X2 BLS,27359,34199,Lkw,324 kW (440 PS),8/1/2015,528.015 km,Frechen,West,0000969109_image,https://www.topused.man.eu/de/de/product-detail?15391232
+39,TGX 18.440 4X2 BLS,31119,38899,Lkw,324 kW (440 PS),8/1/2015,456.481 km,Frechen,West,0000976735_image,https://www.topused.man.eu/de/de/product-detail?15427431
+40,TGX 18.440 4X2 BLS,31839,39799,Lkw,324 kW (440 PS),8/1/2015,358.785 km,Frechen,West,0000976814_image,https://www.topused.man.eu/de/de/product-detail?15427509
+41,TGX 18.480 4X2 BLS,33199,41499,Lkw,353 kW (479 PS),10/1/2015,391.277 km,Frechen,West,0000993594_image,https://www.topused.man.eu/de/de/product-detail?15516878
+42,TGE 3.140 4X2F SB,15920,19900,Van,103 kW (140 PS),11/1/2017,41.329 km,Frechen,West,0000993706_image,https://www.topused.man.eu/de/de/product-detail?15517049
+43,TGX 26.400 6X2-2 LL,16720,20900,Lkw,294 kW (399 PS),7/1/2013,838.624 km,Frechen,West,0001017402_image,https://www.topused.man.eu/de/de/product-detail?15638173
+44,TGX 26.400 6X2-2 LL,17200,21500,Lkw,294 kW (399 PS),7/1/2013,778.779 km,Frechen,West,0001017403_image,https://www.topused.man.eu/de/de/product-detail?15638174
+45,TGX 26.400 6X2-2 LL,17520,21900,Lkw,294 kW (399 PS),5/1/2013,517.630 km,Frechen,West,0001100663_image,https://www.topused.man.eu/de/de/product-detail?16047722
+46,TGX 41.540 8X4/4 BLS E5 ZGG 180.000 kg,42320,52900,Lkw,397 kW (539 PS),5/1/2013,282.127 km,G?ttingen,Mitte,0000933379_image,https://www.topused.man.eu/de/de/product-detail?15222445
+47,TGX 28.480 6X2-2 BLS E6 Intarder Liftachse,27120,33900,Lkw,353 kW (479 PS),7/1/2014,449.479 km,G?ttingen,Mitte,0000961534_image,https://www.topused.man.eu/de/de/product-detail?15355268
+48,TGX 18.480 4X2 BLS E6 Intarder XL 2 x Tank,20319,25399,Lkw,353 kW (479 PS),1/1/2015,695.590 km,G?ttingen,Mitte,0001014246_image,https://www.topused.man.eu/de/de/product-detail?15626178
+49,TGX 18.440 4X2 BLS E6 Intarder XLX 2 x Tank,42799,53499,Lkw,324 kW (440 PS),12/1/2016,216.777 km,G?ttingen,Mitte,0001014501_image,https://www.topused.man.eu/de/de/product-detail?15626414
+50,TGX 18.480 4X2 BLS E6 Intarder XLX 2 x Tank,42079,52599,Lkw,353 kW (479 PS),12/1/2016,322.375 km,G?ttingen,Mitte,0001019927_image,https://www.topused.man.eu/de/de/product-detail?15649706
