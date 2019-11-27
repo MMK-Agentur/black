@@ -40,8 +40,7 @@
               <h3 class="mb-5">Unternehmen</h3>
               <div class="list-group">
                 <a class="list-item link mb-4" href="https://www.topused.man.eu/de/de/topused_general/TopUsed_Kontakt">
-                  <img class="mr-3" src="/assets/images/link.svg"/>
-                  Kontakt
+                  <img class="mr-3" src="/assets/images/link.svg"/>Kontakt
                 </a>
                 <a class="list-item link mb-4" href="https://www.mantruckandbus.com/de/index.html">
                   <img class="mr-3" src="/assets/images/link.svg"/>MAN Truck & Bus Unternehmen
