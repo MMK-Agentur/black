@@ -26,7 +26,17 @@ export default {
   data: function() {
     return {
       selectedRegion: null,
-      regions: ["Region Süd", "Region Ost", "Region West", "Region Nord"]
+      regions: ["Mitte",
+
+"Nord",
+
+"Ost",
+
+"Südost",
+
+"Südwest",
+
+"West"]
     };
   },
 
