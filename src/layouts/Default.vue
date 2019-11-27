@@ -40,17 +40,17 @@
               <h3 class="mb-5">Unternehmen</h3>
               <div class="list-group">
                 <a class="list-item link mb-4" href="https://www.topused.man.eu/de/de/topused_general/TopUsed_Kontakt">
-                  <img src="/assets/images/link.svg"/>
+                  <img class="mr-3"src="/assets/images/link.svg"/>
                   Kontakt
                 </a>
                 <a class="list-item link mb-4" href="https://www.mantruckandbus.com/de/index.html">
-                  <img src="/assets/images/link.svg"/>MAN Truck & Bus Unternehmen
+                  <img class="mr-3" src="/assets/images/link.svg"/>MAN Truck & Bus Unternehmen
                 </a>
                 <a class="list-item link mb-4" href="https://www.corporate.man.eu/de/risk-und-compliance/governance_-risk-und-compliance-bei-man/Governance_-Risk-und-Compliance-bei-MAN.html">
-                  <img src="/assets/images/link.svg"/>Compliance
+                  <img class="mr-3" src="/assets/images/link.svg"/>Compliance
                 </a>
                 <a class="list-item link mb-4" href="https://www.karriere.man.eu/de/">
-                  <img src="/assets/images/link.svg"/>karriere
+                  <img class="mr-3" src="/assets/images/link.svg"/>karriere
                 </a>
               </div>
             </div>
