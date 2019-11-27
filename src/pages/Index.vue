@@ -21,6 +21,7 @@ query Vehicles {
           Region
           RegistrationDate
           Image
+          Link
         }
       }
     }
