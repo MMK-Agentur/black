@@ -37,24 +37,20 @@
         <div class="footer-container">
           <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-12 col-12 mb-4">
-              <h3>Unternehmen</h3>
+              <h3 class="mb-5">Unternehmen</h3>
               <div class="list-group">
-                <a class="list-item link" href="#">
-                  <font-awesome
-                    :icon="['fas', 'chevron-left']"
-                    class="mr-2 mt-4"
-                    style="color: #E40045;"
-                  />Kontakt
+                <a class="list-item link mb-4" href="https://www.topused.man.eu/de/de/topused_general/TopUsed_Kontakt">
+                  <img src="/assets/images/link.svg"/>
+                  Kontakt
                 </a>
-                <a class="list-item link" href="#">
-                  <font-awesome
-                    :icon="['fas', 'chevron-left']"
-                    class="mr-2 mt-4"
-                    style="color: #E40045;"
-                  />MAN Truck & Bus Unternehmen
+                <a class="list-item link mb-4" href="https://www.mantruckandbus.com/de/index.html">
+                  <img src="/assets/images/link.svg"/>MAN Truck & Bus Unternehmen
                 </a>
-                <a class="list-item link" href="#">
-                  <font-awesome :icon="['fas', 'stop']" class="mr-2 mt-4" style="color: #E40045;" />Karriere
+                <a class="list-item link mb-4" href="https://www.corporate.man.eu/de/risk-und-compliance/governance_-risk-und-compliance-bei-man/Governance_-Risk-und-Compliance-bei-MAN.html">
+                  <img src="/assets/images/link.svg"/>Compliance
+                </a>
+                <a class="list-item link mb-4" href="https://www.karriere.man.eu/de/">
+                  <img src="/assets/images/link.svg"/>karriere
                 </a>
               </div>
             </div>
@@ -65,9 +61,9 @@
               <span>© MAN 2019</span>
             </div>
             <div class="links">
-              <a class="link mr-2" href="#">Impresium</a>
-              <a class="link mr-2" href="#">Datenschutz</a>
-              <a class="link" href="#">Cookies</a>
+              <a class="link mr-2" href="https://www.topused.man.eu/de/de/topused_general/topused_impressum">Impresium</a>
+              <a class="link mr-2" href="https://www.topused.man.eu/de/de/topused_general/TopUsed-Datenschutz-Routing">Datenschutz</a>
+              <a class="link" href="https://www.topused.man.eu/de/de/topused_general/topused_cookie_information">Cookies</a>
             </div>
           </div>
         </div>       

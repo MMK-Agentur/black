@@ -58,8 +58,8 @@ export default {
       return this.vehicles.length;
     },
     perPage() {
-      if (this.windowWidth < 768) return 1;
-      if (this.windowWidth >= 768 && this.windowWidth < 922) return 2;
+      if (this.windowWidth < 576) return 1;
+      if (this.windowWidth >= 576 && this.windowWidth <= 992) return 2;
 
       return 8;
     }
