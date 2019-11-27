@@ -35,6 +35,12 @@ module.exports = {
         typeName: 'Price',        
         path: './static/assets/data/Prices.csv'       
       }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-152971060-1'
+      }
     }
   ]
   
