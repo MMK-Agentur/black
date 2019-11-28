@@ -3,7 +3,7 @@
     <div class="newsletter" style="margin-top: 25px;">
       <b-button class="btn-cta" v-b-modal.modal-news>Newsletter bestellen</b-button>
 
-      <b-modal id="modal-news" title="MAN Newsletter" hide-footer >
+      <b-modal id="modal-news" title="MAN TopUsed Newsletter" hide-footer >
         <div class="container">
           <form action="https://eu2.cleverreach.com/f/241851-237982/wcs/" method="post" target="_blank">
             <div class="form-group container-form col-10 mx-auto pt-5 mt-5">
