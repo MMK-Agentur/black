@@ -13,45 +13,17 @@
   </div>
 </template>
 
-<static-query>
-query {
-  prices: allPrice {
-    edges {
-      node {
-        records {
-          PriceLegend
-          From
-          To
-        }
-      }
-    }
-  }
-}
-</static-query>
-
 <script>
 import BFormSelect from "bootstrap-vue";
 
 export default {
   data: function() {
     return {
-      selectedPrice: null
+      selectedPrice: null,
+      prices: []
     };
   },
 
-  computed: {
-    prices: function() {
-      return this.$static.prices.edges[0].node.records.map(function(x) {
-        return {
-          text: x.PriceLegend,
-          value: {
-            To: x.To,
-            From: x.From
-          }
-        };
-      });
-    }
-  },
   methods: {
     priceSelected(price) {
       this.$emit("priceSelected", price);
