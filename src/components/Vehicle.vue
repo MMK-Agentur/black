@@ -5,10 +5,10 @@
       
       <div class="card-body">
         <h3 class="card-title">{{vehicle.Model}}</h3>
-        <div class="media-promo d-flex flex-row justify-content-between">
+        <!-- <div class="media-promo d-flex flex-row justify-content-between">
           <h3 class="text-r">{{formatPrice(vehicle.DiscountPrice)}} EUR</h3>
           <h3 class="text-l">-20%</h3>
-        </div>
+        </div> -->
         <div class="card-text-promo">
           <div class="price-text">{{formatPrice(vehicle.NormalPrice)}}</div>
           <small class="val-text">EUR (netto)</small>
