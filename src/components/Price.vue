@@ -5,6 +5,8 @@
       <b-form-select class="form-control" id="exampleFormControlSelect1" v-model="selectedPrice" :options="prices" @change="priceSelected">
         <template v-slot:first>
           <option :value="null">Bitte Preis auswählen</option>
+          <option :value="-1">Aufsteigend</option>
+          <option :value="-2">Absteigend</option>
         </template>
       </b-form-select>
     </div>

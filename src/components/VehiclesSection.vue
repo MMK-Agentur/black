@@ -24,7 +24,7 @@ import VehicleList from "../components/VehicleList";
 import Region from "../components/Region";
 import VehicleType from "../components/VehicleType";
 import Price from "../components/Price";
-import { filter } from "lodash";
+import { filter, orderBy } from "lodash";
 
 export default {
   components: {
@@ -52,6 +52,14 @@ export default {
       const { Price, ...regionAndLocation } = this.filters;
       this.vehiclesListed = filter(this.vehicles, regionAndLocation);
       if (Price) {
+        if(Price === -1) {
+          this.vehiclesListed = orderBy(this.vehiclesListed, x => parseInt(x.DiscountPrice), ['asc']);
+          return;
+        }
+        if(Price === -2) {
+          this.vehiclesListed = orderBy(this.vehiclesListed, x => parseInt(x.DiscountPrice), ['desc']);
+          return;
+        }
        
         this.vehiclesListed = filter(this.vehiclesListed, function(vehicle) {
           const vehiclePrice = parseInt(vehicle.DiscountPrice);
