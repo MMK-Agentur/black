@@ -356,4 +356,73 @@ footer .footer-container {
 footer .footer-container .list-item {
   font-size: 15px;
 }
+
+.container-form {
+  background-color: #F0F1F2;
+  padding: 15px;
+}
+
+.container-form form .form-group {
+  font-family: MAN-light, Arial, sans-serif;
+  color: #303c49;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel .carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel .carousel-inner .card .card-list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-top: 5px;
+}
+
+.carousel .carousel-inner .card .card-list_item .icon {
+  width: 24px;
+  margin-right: 5px;
+}
+
+.carousel .carousel-inner .card .card-list_item .icon img {
+  width: 24px;
+}
+
+.carousel .carousel-inner .card .card-list_item .text-list {
+  font-family: MAN-light, Arial, sans-serif;
+  color: #303c49;
+}
+
+.carousel .carousel-control-prev-icon {
+  background: white;
+  border: 1px solid #303c49;
+  padding: 4px;
+  color: #303c49;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.carousel .carousel-control-next-icon {
+  background: white;
+  border: 1px solid #303c49;
+  padding: 4px;
+  color: #303c49;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+}
 /*# sourceMappingURL=app.css.map */
