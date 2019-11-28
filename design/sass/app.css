@@ -359,13 +359,31 @@ footer .footer-container .list-item {
 
 .container-form {
   background-color: #F0F1F2;
-  padding: 15px;
+  padding: 30px 15px;
 }
 
 .container-form form .form-group {
   font-family: MAN-light, Arial, sans-serif;
   color: #303c49;
   margin-bottom: 10px;
+}
+
+.container-form form .form-group .form-check-inline .form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-right: .3125rem;
+  margin-left: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.container-form form .form-group .form-check-inline .form-check-input input[type="checkbox"],
+.container-form form .form-group .form-check-inline .form-check-input input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  width: 25px;
+  height: 25px;
 }
 
 .carousel {
