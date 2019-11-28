@@ -84,7 +84,7 @@ export default {
     },
 
     filterByVehicleType(vehicleType) {
-      if (vehicleType) {
+      if (vehicleType) {       
         this.filters = { ...this.filters, VehicleType: vehicleType };
       } else {
         const { VehicleType, ...newFilters } = this.filters;
