@@ -4,6 +4,7 @@
   </Layout>
 </template>
 
+
 <page-query>
 query Vehicles {
  vehicles: allVehicle { 
@@ -40,9 +41,22 @@ export default {
   metaInfo: {
     title: 'MAN TopUsed Deutschland'
   },
+  methods: {
+    formatGermanTypes(value) {
+        if(value.includes('Anh')){
+          return 'Anhänger';
+        }     
+        return value;
+    }
+
+  }, 
   computed: {
+    
     vehicles: function() {
-      return this.$page.vehicles.edges[0].node.records;
+      const records = this.$page.vehicles.edges[0].node.records;
+      return records.map(v => {
+        return {...v, VehicleType: this.formatGermanTypes(v.VehicleType) }
+      })
     }
   }
 };
