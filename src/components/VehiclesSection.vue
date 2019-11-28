@@ -11,6 +11,7 @@
           <Region @regionSelected="filterByRegion" />
           <VehicleType @locationSelected="filterByVehicleType"/>
           <Price @priceSelected="filterByPrice" />
+          <NewsletterForm/>
         </div> 
       </div>
       <h4 class="mt-5 mb-3"><strong>Blackout Friday Top Seller aus allen Regionen:</strong></h4>
@@ -23,6 +24,7 @@
 import VehicleList from "../components/VehicleList";
 import Region from "../components/Region";
 import VehicleType from "../components/VehicleType";
+import NewsletterForm from "../components/NewsletterForm";
 import Price from "../components/Price";
 import { filter, orderBy } from "lodash";
 
@@ -31,7 +33,8 @@ export default {
     VehicleList,
     Region,
     VehicleType,
-    Price
+    Price,
+    NewsletterForm
   },
 
   props: {
