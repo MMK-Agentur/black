@@ -32,7 +32,7 @@
           </div>
           <div class="card-list_item">
             <img class="icon" src="/assets/images/location.svg" />
-            <p class="text-list">{{vehicle.Location}}</p> 
+            <p class="text-list">{{formatGermanCities(vehicle.Location)}}</p> 
           </div>
         </div>
       </div>
@@ -62,6 +62,14 @@ export default {
     formatPrice(value) {
       let val = (value / 1).toFixed(2).replace(".", ",");
       return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    },
+    formatGermanCities(value) {
+        if(value.includes('ttingen')){
+          return 'Göttingen';
+        }
+        if(value.includes('nberg')) {
+          return 'Nürnberg';
+        }
     }
   }
 };
