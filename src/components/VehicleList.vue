@@ -1,7 +1,8 @@
 <template >
   <div class="container">
     <div class="teaser-section row">
-      <Vehicle v-for="vehicle in listedVehicles" :key="vehicle.id" :vehicle="vehicle" />
+      <client-only>
+         <Vehicle v-for="vehicle in listedVehicles" :key="vehicle.id" :vehicle="vehicle" />
       <div class="col-12">
         <b-pagination
           align="center"
@@ -24,6 +25,8 @@
           </template>        
         </b-pagination>  
       </div>
+      </client-only>
+     
     </div>
   </div>
 </template>
@@ -31,6 +34,7 @@
 <script>
 import Vehicle from "./Vehicle";
 import BPagination from "bootstrap-vue";
+import ClientOnly from "vue-client-only";
 
 export default {
   data() {
@@ -39,7 +43,7 @@ export default {
     };
   },
   components: {
-    Vehicle
+    Vehicle, ClientOnly
   },
   props: {
     vehicles: {
