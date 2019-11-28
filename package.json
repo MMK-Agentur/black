@@ -15,6 +15,7 @@
     "bootstrap-scss": "4.3.1",
     "bootstrap-vue": "^2.1.0",
     "es6-promise": "^4.2.8",
+    "function.name-polyfill": "^1.0.6",
     "gridsome": "^0.7.0",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.15",

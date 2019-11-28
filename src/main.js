@@ -1,6 +1,7 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 require('isomorphic-fetch');
+require('function.name-polyfill');
 import DefaultLayout from '~/layouts/Default.vue'
 import BootstrapVue from 'bootstrap-vue';
 
