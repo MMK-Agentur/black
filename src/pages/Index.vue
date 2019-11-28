@@ -47,7 +47,17 @@ export default {
           return 'Anhänger';
         }     
         return value;
+    },
+     formatGermanCities(value) {
+        if(value.includes('dost')){
+          return 'Südost';
+        }   
+            if(value.includes('dwest')){
+          return 'Südwest';
+        }    
+        return value;
     }
+
 
   }, 
   computed: {
@@ -55,7 +65,7 @@ export default {
     vehicles: function() {
       const records = this.$page.vehicles.edges[0].node.records;
       return records.map(v => {
-        return {...v, VehicleType: this.formatGermanTypes(v.VehicleType) }
+        return {...v, VehicleType: this.formatGermanTypes(v.VehicleType), Region: this.formatGermanCities(v.Region) }
       })
     }
   }
