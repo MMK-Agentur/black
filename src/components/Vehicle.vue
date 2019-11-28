@@ -27,7 +27,7 @@
             <p class="text-list">{{vehicle.RegistrationDate}}</p>
           </div>
           <div class="card-list_item">              
-            <img class="icon" src="/assets/images/man_icons_48px_anthrazit_strecken.svg" />
+            <img class="icon" src="/assets/images/man_icons_48px_anthrazit_rot_wlan_truck.svg" />
             <p class="text-list">{{vehicle.Mileage}}</p>
           </div>
           <div class="card-list_item">
