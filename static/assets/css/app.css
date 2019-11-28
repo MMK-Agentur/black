@@ -525,3 +525,15 @@ footer .footer-container .list-item img {
     margin-left: 167px !important;
   }
 }
+
+@media screen and (min-width: 1800px) and (max-width: 2400px) {
+  .Cookie__buttons .Cookie__button{
+    margin-left: 224px !important;
+  }
+}
+
+@media screen and (min-width: 2400px) and (max-width: 3600px) {
+  .Cookie__buttons .Cookie__button{
+    margin-left: 288px !important;
+  }
+}

@@ -1,7 +1,7 @@
 <template>
   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
     <div class="newsletter" style="margin-top: 25px;">
-      <b-button class="btn-cta" v-b-modal.modal-news>Newsletter bestellen</b-button>
+      <b-button class="btn-cta" v-b-modal.modal-news>Newsletter bestellen und Top-Angebote sichern!</b-button>
 
       <b-modal id="modal-news" title="MAN Newsletter" hide-footer >
         <div class="container">
