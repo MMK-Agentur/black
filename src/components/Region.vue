@@ -10,7 +10,7 @@
         @change="regionSelected"
       >
         <template v-slot:first>
-          <option :value="null">Bitte wählen Sie eine Region aus</option>
+          <option :value="null">Bitte Region auswählen</option>
         </template>
       </b-form-select>
     </div>

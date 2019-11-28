@@ -4,7 +4,7 @@
       <label for="exampleFormControlSelect1">Fahrzeugtyp</label>    
       <b-form-select class="form-control" id="exampleFormControlSelect1" v-model="selectedLocation" :options="locations" @change="locationSelected">
         <template v-slot:first>
-          <option :value="null">Bitte wählen Sie ein Fahrzeugtyp aus</option>
+          <option :value="null">Bitte Fahrzeugtyp auswählen</option>
         </template>
       </b-form-select>
     </div>
