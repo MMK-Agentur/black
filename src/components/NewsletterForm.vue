@@ -1,5 +1,5 @@
 <template>
-  <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+  <div class="col-lg-3 col-md-6 col-sm-6 col-12">
     <div class="newsletter" style="margin-top: 25px;">
       <b-button class="btn-cta" v-b-modal.modal-news>Newsletter bestellen</b-button>
 
