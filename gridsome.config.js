@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'MAN TopUsed Deutschland',
- 
+  
   plugins: [
     {
       use: '@gridsome/source-filesystem',
