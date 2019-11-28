@@ -1,0 +1,124 @@
+<script>
+    function loadjQuery(e, t) { var n = document.createElement("script"); n.setAttribute("src", e); n.onload = t; n.onreadystatechange = function () { if (this.readyState == "complete" || this.readyState == "loaded") t() }; document.getElementsByTagName("head")[0].appendChild(n) } function main() {
+        var $cr = jQuery.noConflict(); var old_src; $cr(document).ready(function () { $cr(".cr_form").submit(function () { $cr(this).find('.clever_form_error').removeClass('clever_form_error'); $cr(this).find('.clever_form_note').remove(); $cr(this).find(".musthave").find('input, textarea').each(function () { if (jQuery.trim($cr(this).val()) == "" || ($cr(this).is(':checkbox')) || ($cr(this).is(':radio'))) { if ($cr(this).is(':checkbox') || ($cr(this).is(':radio'))) { if (!$cr(this).parent().find(":checked").is(":checked")) { $cr(this).parent().addClass('clever_form_error') } } else { $cr(this).addClass('clever_form_error') } } }); if ($cr(this).attr("action").search(document.domain) > 0 && $cr(".cr_form").attr("action").search("wcs") > 0) { var cr_email = $cr(this).find('input[name=email]'); var unsub = false; if ($cr("input['name=cr_subunsubscribe'][value='false']").length) { if ($cr("input['name=cr_subunsubscribe'][value='false']").is(":checked")) { unsub = true } } if (cr_email.val() && !unsub) { $cr.ajax({ type: "GET", url: $cr(".cr_form").attr("action").replace("wcs", "check_email") + $cr(this).find('input[name=email]').val(), success: function (data) { if (data) { cr_email.addClass('clever_form_error').before("<div class='clever_form_note cr_font'>" + data + "</div>"); return false } }, async: false }) } var cr_captcha = $cr(this).find('input[name=captcha]'); if (cr_captcha.val()) { $cr.ajax({ type: "GET", url: $cr(".cr_form").attr("action").replace("wcs", "check_captcha") + $cr(this).find('input[name=captcha]').val(), success: function (data) { if (data) { cr_captcha.addClass('clever_form_error').after("<div  class='clever_form_note cr_font'>" + data + "</div>"); return false } }, async: false }) } } if ($cr(this).find('.clever_form_error').length) { return false } return true }); $cr('input[class*="cr_number"]').change(function () { if (isNaN($cr(this).val())) { $cr(this).val(1) } if ($cr(this).attr("min")) { if (($cr(this).val() * 1) < ($cr(this).attr("min") * 1)) { $cr(this).val($cr(this).attr("min")) } } if ($cr(this).attr("max")) { if (($cr(this).val() * 1) > ($cr(this).attr("max") * 1)) { $cr(this).val($cr(this).attr("max")) } } }); old_src = $cr("div[rel='captcha'] img:not(.captcha2_reload)").attr("src"); if ($cr("div[rel='captcha'] img:not(.captcha2_reload)").length != 0) { captcha_reload() } }); function captcha_reload() { var timestamp = new Date().getTime(); $cr("div[rel='captcha'] img:not(.captcha2_reload)").attr("src", ""); $cr("div[rel='captcha'] img:not(.captcha2_reload)").attr("src", old_src + "?t=" + timestamp); return false }
+
+    }
+    if (typeof jQuery === "undefined") { loadjQuery("//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js", main) } else { main() }
+
+</script>
+
+
+
+
+
+<form class="layout_form cr_form cr_font" action="https://eu2.cleverreach.com/f/241851-237982/wcs/" method="post"
+    target="_blank">
+    <div class="cr_body cr_page cr_font formbox">
+        <div class="non_sortable">
+
+        </div>
+
+        <div class="editable_content">
+            <div id="5124043" rel="text" class="cr_ipe_item ui-sortable">
+                <label for="text5124043" class="itemname">Name</label> <input id="text5124043" name="1137843"
+                    type="text" value="" />
+            </div>
+            <div id="5124044" rel="text" class="cr_ipe_item ui-sortable">
+                <label for="text5124044" class="itemname">Vorname</label> <input id="text5124044" name="1137842"
+                    type="text" value="" />
+            </div>
+            <div id="5124045" rel="text" class="cr_ipe_item ui-sortable">
+                <label for="text5124045" class="itemname">Unternehmen</label> <input id="text5124045" name="1137844"
+                    type="text" value="" />
+            </div>
+            <div id="5124051" rel="checkbox" class="cr_ipe_item ui-sortable">
+                <label class="itemname">Ich interessiere mich f&uuml;r</label>
+                <div>
+
+                    <input id="Truck5124051" class="cr_ipe_checkbox" name="1138264[]" value="Truck"
+                        type="checkbox" />Truck&nbsp;
+
+                    <input id="Bus5124051" class="cr_ipe_checkbox" name="1138264[]" value="Bus"
+                        type="checkbox" />Bus&nbsp;
+
+                    <input id="Van5124051" class="cr_ipe_checkbox" name="1138264[]" value="Van"
+                        type="checkbox" />Van&nbsp;
+
+                    <input id="Anh&auml;nger5124051" class="cr_ipe_checkbox" name="1138264[]" value="Anh&auml;nger"
+                        type="checkbox" />Anh&auml;nger&nbsp;
+
+                </div>
+                <br />
+            </div>
+            <div id="5123904" rel="email" class="cr_ipe_item ui-sortable musthave">
+                <label for="text5123904" class="itemname">E-Mail*</label> <input id="text5123904" name="email" value=""
+                    type="text" />
+            </div>
+            <div id="5123906" rel="button" class="cr_ipe_item ui-sortable submit_container">
+                <button type="submit" class="cr_button">Anmelden</button>
+            </div>
+        </div>
+
+
+    </div>
+
+</form>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <title>MAN TOPUSED STARTSEITE</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/core.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/core-extended.css" rel="stylesheet">
+    <link rel="stylesheet" href="sass/app.css" rel="stylesheet">
+    <link rel="stylesheet" href="font/man-webfont-europe-condensed-bold/" rel="stylesheet">
+    <link rel="stylesheet" href="font/man-webfont-europe-condensed-regular/" rel="stylesheet">
+    <link rel="stylesheet" href="font/maneurope-light/" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="icon/man_icon/style.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+</head>
+<section>
+    <div class="container">
+        <form>
+            <div class=" form-group container-form col-10 mx-auto">
+                <div class="mb-5">
+                    <label>Name</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-5">
+                    <label>Vorname</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="form-group container-form col-10 mx-auto">
+                <h5><strong>Ich interessiere mich für</strong></h5>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Truck</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Bus</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Van</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="bar2" for="inlineCheckbox2">Anhänger </label>
+                </div>
+            </div>
+        </form>
+    </div>
+
+</section>

@@ -356,4 +356,15 @@ footer .footer-container {
 footer .footer-container .list-item {
   font-size: 15px;
 }
+
+.container-form {
+  background-color: #F0F1F2;
+  padding: 15px;
+}
+
+.container-form form .form-group {
+  font-family: MAN-light, Arial, sans-serif;
+  color: #303c49;
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=app.css.map */
