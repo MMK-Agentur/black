@@ -70,6 +70,7 @@ export default {
         if(value.includes('nberg')) {
           return 'Nürnberg';
         }
+        return value;
     }
   }
 };
