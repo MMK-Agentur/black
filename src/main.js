@@ -1,6 +1,6 @@
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
-
+require('isomorphic-fetch');
 import DefaultLayout from '~/layouts/Default.vue'
 import BootstrapVue from 'bootstrap-vue';
 
@@ -30,7 +30,10 @@ export default function (Vue, { router, head, isClient }) {
     name: 'viewport',
     content: 'width=device-width, initial-scale=1, shrink-to-fit=no'
   });
-
+  head.meta.push({
+    name: 'script',
+    src: 'https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js'
+  });
 
   Vue.component('Layout', DefaultLayout);
   Vue.component('font-awesome', FontAwesomeIcon);
@@ -40,3 +43,4 @@ export default function (Vue, { router, head, isClient }) {
   Vue.use(BootstrapVue);
 
 }
+
