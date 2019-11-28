@@ -1,0 +1,51 @@
+.carousel {
+    width: 100%;
+
+    .carousel-inner {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        .card {
+            .card-list_item {
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                margin-top: 5px;
+
+                .icon {
+                    width: 24px;
+                    margin-right: 5px;
+
+                    img {
+                        width: 24px;
+                    }
+                }
+
+                .text-list {
+                    font-family: MAN-light, Arial, sans-serif;
+                    color: #303c49;
+                }
+            }
+        }
+    }
+
+    .carousel-control-prev-icon {
+        background: white;
+        border: 1px solid #303c49;
+        padding: 4px;
+        color: #303c49;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+    }
+    .carousel-control-next-icon {
+        background: white;
+        border: 1px solid #303c49;
+        padding: 4px;
+        color: #303c49;
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+    }
+}
