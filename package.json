@@ -16,6 +16,8 @@
     "bootstrap-vue": "^2.1.0",
     "gridsome": "^0.7.0",
     "lodash": "^4.17.15",
+    "vue-client-only": "^2.0.0",
+    "vue-cookie-law": "^1.11.0",
     "vue-cookieconsent-component": "^1.2.0",
     "vue-window-size": "^0.2.5"
   },
