@@ -6,7 +6,7 @@
           <h4 class="nav-title">MAN TopUsed Deutschland</h4>
           <div class="nav-first-level nav-container">
             <a href="https://www.topused.man.eu/de/de/" target="_blank">MAN TOPUSED STARTSEITE</a>
-            <a href="https://www.truck.man.eu/de/en/index.html" id="logo" target="_blank">
+            <a href="https://www.truck.man.eu/de/de/lkw.html" id="logo" target="_blank">
               <img
                 src="https://www.truck.man.eu/de/media/nresources/nimages/man_logo_batch.svg"
                 alt="MAN"

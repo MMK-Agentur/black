@@ -1,7 +1,7 @@
 <template>
   <div class="col-lg-3 col-md-6 col-sm-6 col-12">
     <div class="newsletter" style="margin-top: 25px;">
-      <b-button class="btn-cta" v-b-modal.modal-news>Newsletter bestellen und Top-Angebote sichern!</b-button>
+      <b-button class="btn-cta" v-b-modal.modal-news>Newsletter bestellen</b-button>
 
       <b-modal id="modal-news" title="MAN Newsletter" hide-footer >
         <div class="container">
@@ -69,8 +69,10 @@
                 <label for="text5123904" >E-Mail</label>
                 <input id="text5123904" name="email" value="" type="email" class="form-control" />
                 <div id="5123906" class="mt-5">
-                     <button  class="btn btn-primary" type="submit" @click="close()" >Anmelden</button>                 
+                     <button  class="btn btn-primary" type="submit" @click="close()" >Anmelden</button> 
+                     
                 </div>
+                <p style="font-size:x-small;padding-top:10px">*Unser kostenloser Newsletter informiert Sie regelmäßig über gebrauchte Nutzufahrzeuge. Ihre hier eingegebenen Daten werden lediglich zur Personalisierung des Newsletters verwendet und nicht an Dritte weitergegeben. Durch Absenden der von Ihnen eingegebenen Daten willigen Sie in die Datenverarbeitung ein und bestätigen unsere Datenschutzerklärung.</p>                
               </div>
             </div>
           </form>
