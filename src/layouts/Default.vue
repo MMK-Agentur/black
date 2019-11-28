@@ -93,8 +93,8 @@
             </div>
           </div>
         </div>
-        <client-only>
-          <cookie-law theme="blood-orange" buttonText="Akzeptieren" buttonLinkNewTab>
+         <client-only>
+          <cookie-law theme="bambam" buttonText="Akzeptieren" buttonLinkNewTab>
             <div slot="message">
               Diese Website verwendet Cookies. Um die Website und ihre Angebote nutzen und weiternavigieren zu können, akzeptieren Sie bitte die Verwendung dieser Cookies, indem Sie auf die rote Schaltfläche „Akzeptieren“ klicken. Die verwendeten Cookies können Sie in Ihren Browsereinstellungen ändern. Weitere Informationen finden Sie auf unserer Seite
               <a
