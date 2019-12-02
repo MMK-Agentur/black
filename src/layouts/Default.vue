@@ -22,8 +22,15 @@
           <div class="container">
             <div class>
               <div class="header-media">
-                <img class="img-fluid" src="/assets/images/promo2.svg" alt="promo"/>
-                <img class="img-fluid" src="/assets/images/promo2.2.svg" alt="promo"style="margin-top:5px" />
+                <img class="img-fluid" src="/assets/images/promo2.svg" alt="promo" />
+                <a href="https://www.topused.man.eu/de/de/vehicleSearch" target="_blank">
+                  <img
+                    class="img-fluid"
+                    src="/assets/images/promo2.2.svg"
+                    alt="promo"
+                    style="margin-top:5px"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -94,7 +101,7 @@
             </div>
           </div>
         </div>
-         <client-only>
+        <client-only>
           <cookie-law theme="bambam" buttonText="Akzeptieren" buttonLinkNewTab>
             <div slot="message">
               Diese Website verwendet Cookies. Um die Website und ihre Angebote nutzen und weiternavigieren zu können, akzeptieren Sie bitte die Verwendung dieser Cookies, indem Sie auf die rote Schaltfläche „Akzeptieren“ klicken. Die verwendeten Cookies können Sie in Ihren Browsereinstellungen ändern. Weitere Informationen finden Sie auf unserer Seite
