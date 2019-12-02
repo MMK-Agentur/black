@@ -22,7 +22,8 @@
           <div class="container">
             <div class>
               <div class="header-media">
-                <img class="img-fluid" src="/assets/images/promo.svg" alt="promo" />
+                <img class="img-fluid" src="/assets/images/promo2.svg" alt="promo"/>
+                <img class="img-fluid" src="/assets/images/promo2.1.svg" alt="promo"style="margin-top:5px" />
               </div>
             </div>
           </div>
