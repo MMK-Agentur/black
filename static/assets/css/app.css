@@ -311,14 +311,16 @@
 }
 
 .header-content .container .header-media img {
-  padding: 40px;
+  padding: 20px;
   width: 70%;
+  margin-top:59px;
 }
 
 @media screen and (max-width: 576px) {
   .header-content .container .header-media img {
-    padding: 20px;
-    margin-top: 45px;
+    padding:9px;
+    margin-top: 75px;
+    width: 100%;
   }
 }
 
@@ -334,15 +336,15 @@
   .header-content .container .header-media img {
     padding: 20px;
     width: 60%;
-    margin-top: 102px;
+    margin-top: 172px;
   }
 }
 
 @media screen and (min-width: 1300px) {
   .header-content .container .header-media img {
-    padding: 0px;
+    padding: 20px;
     width: 68%;
-    margin-top: 106px;
+    margin-top: 206px;
   }
 }
 
